@@ -1,5 +1,5 @@
 :root {
-    /* background color */
+    background color
     --background:#FFFFFF;
     --background-dark:#000A24;
     --background-footer:#252323;
@@ -15,7 +15,10 @@
     --form-background:#FFFFFF;
     --input-disabled:#CECECE;
 
-
-/* Стилі для екранів більше 1920 пікселів */
-@media (min-width: 768px) {
-}
+} 
+ Стилі для екранів більше 1920 пікселів 
+ @media (min-width: 768px) {
+ } 
+ .block-resourse{
+    margin: 100px 325px 100px 325px;
+} 
