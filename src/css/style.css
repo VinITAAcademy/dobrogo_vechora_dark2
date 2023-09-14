@@ -14,8 +14,74 @@
     /*  form */
     --form-background:#FFFFFF;
     --input-disabled:#CECECE;
-
+}
 
 /* Стилі для екранів більше 1920 пікселів */
 @media (min-width: 768px) {
+}
+
+.conteiner {
+    background-color: #000A24;
+    width: 1920px;
+    height: 473px;
+    display: flex;
+    
+    
+}
+
+.image-conteiner {
+    
+}
+
+.image {
+   height: 473px;
+   width: 680px; 
+   
+   display: inline-block;
+   
+   
+   
+   
+   
+
+}
+
+.text-conteiner {
+    
+    padding: 20px 20px;
+    
+    
+}
+
+.text {
+    color: #FFFFFF;
+    font-size: 42px;
+    Width: 809px;
+    Height: 155px;
+    
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 60px 65px 50px 325px;
+    
+    
+}
+
+
+.button {
+    background-color: #083CC0;
+    padding: 15px 32px;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    
+    margin: 0px 0px 0px 325px;
+    text-decoration: none;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 351px;
+    height: 76px;
 }
