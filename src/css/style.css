@@ -13,7 +13,7 @@
     /*  form */
     --form-background: #FFFFFF;
     --input-disabled: #CECECE;
-
+    --background-grey: #2a3035
 }
 
 /* Стилі для екранів більше 1920 пікселів */
@@ -75,7 +75,7 @@ body.lock {
 }
 
 .header-link {
-    color: #FFFFFF;
+    color: var(--text-white);
     font-family: Arial, Helvetica;
     font-weight: 500;
     line-height: 26px;
@@ -91,7 +91,7 @@ body.lock {
     margin-right: 4px;
     margin-top: 27px;
     z-index: 3;
-    background-color: #000A25;
+    background-color: var(--text-dark);
     border-radius: 20%;
 }
 
@@ -99,7 +99,7 @@ body.lock {
     position: absolute;
     left: 7px;
     width: 55%;
-    background-color: #FFFFFF;
+    background-color: var(--text-white);
     height: 1px;
     top: 14px;
     transition: all 0.5s ease 0s;
@@ -108,7 +108,7 @@ body.lock {
 .header-burger:before,
 .header-burger:after {
     content: '';
-    background-color: #FFFFFF;
+    background-color: var(--text-white);
     position: absolute;
     width: 55%;
     height: 1px;
@@ -140,19 +140,19 @@ body.lock {
 
 .header-body select {
     background: transparent;
-    border-color: #FFFFFF;
+    border-color: var(--text-white);
     border-radius: 10%;
     border-width: 2px;
     width: 74px;
     height: 44px;
     text-align: center;
     font-size: 18px;
-    color: #FFFFFF;
+    color: var(--text-white);
     margin-right: 12px;
 }
 
 .header-body select option {
-    background-color: #2a3035;
+    background-color: var(--background-grey);
 }
 
 @media (min-width: 768px) {
