@@ -1,5 +1,5 @@
 :root {
-    /* background color */
+    background color
     --background:#FFFFFF;
     --background-dark:#000A24;
     --background-footer:#252323;
@@ -183,5 +183,8 @@ body.lock{
 .header_list li{
     margin-left: 42px;
 }
-
+.block-resourse{
+    margin: 100px 325px 100px 325px;
+} 
 }
+
