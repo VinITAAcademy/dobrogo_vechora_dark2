@@ -1,24 +1,24 @@
 :root {
-    background color
-    --background:#FFFFFF;
-    --background-dark:#000A24;
-    --background-footer:#252323;
-    /* text color */
-    --text-dark: #000A24;
-    --text-white: #FFFFFF;
-    /* buttons */
-    --button-background-normal: #083CC0;
-    --button-text-normal: #FFFFFF;
-    /* navigation menu */
-    --nav-text-normal:#FFFFFF;
-    /*  form */
-    --form-background:#FFFFFF;
-    --input-disabled:#CECECE;
+  background color
+  --background:#FFFFFF;
+  --background-dark:#000A24;
+  --background-footer:#252323;
+  /* text color */
+  --text-dark: #000A24;
+  --text-white: #FFFFFF;
+  /* buttons */
+  --button-background-normal: #083CC0;
+  --button-text-normal: #FFFFFF;
+  /* navigation menu */
+  --nav-text-normal:#FFFFFF;
+  /*  form */
+  --form-background:#FFFFFF;
+  --input-disabled:#CECECE;
 
 } 
- Стилі для екранів більше 1920 пікселів 
- @media (min-width: 768px) {
- } 
- .block-resourse{
-    margin: 100px 325px 100px 325px;
+Стилі для екранів більше 1920 пікселів 
+@media (min-width: 768px) {
+} 
+.block-resourse{
+  margin: 100px 325px 100px 325px;
 } 
