@@ -15,7 +15,14 @@
     --input-disabled: #CECECE;
     --background-grey: #2a3035
 }
-
+@font-face {
+    font-family: 'Gilroy';
+    src: url('src/fonts/Gilroy-UltraLight.woff') format('woff');
+}
+@font-face {
+    font-family: 'Helvetica';
+    src: url('src/fonts/HelveticaNowDisplay-ExtLt.woff') format('woff');
+}
 /* Стилі для екранів більше 1920 пікселів */
 .content.lock {
     filter: blur(2px);
@@ -151,10 +158,104 @@ body.lock {
     margin-right: 12px;
 }
 
-.header-body select option {
+#test .header-body select option {
     background-color: var(--background-grey);
 }
-
+.conteiner-for-list-study{
+    background-color: #000A24;
+    font-family: 'Gilroy', sans-serif;
+}
+.start-line{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 42px;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 60px 0 ;
+    font-family: 'Gilroy', sans-serif;
+}
+.line-list{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Gilroy', sans-serif;
+}
+.image-block-study{
+    width: 100px;
+}
+.text-for-start-point{
+    margin-bottom: 42px;
+    display: flex;
+    font-weight: 400;
+    font-family: 'Gilroy', sans-serif;
+}
+.text-for-start-point-end{
+    margin-top: 42px;
+    display: flex;
+    font-weight: 400;
+    font-family: 'Gilroy', sans-serif;
+}
+.list-study-start-point{
+    color: #ffffff;
+    height: 490px;
+    margin: 10px 15px;
+    font-size: 22px;
+    align-items: center;
+    text-align: start;
+    font-weight: 400;
+    font-family: 'Gilroy', sans-serif;
+}
+.list-study {
+    background-color: rgb(255, 255, 255);
+    color: #000A24;
+    height: 490px;
+    border-radius: 10px;
+    border: 1px solid #CBCBCB;
+    margin: 10px 15px;
+    font-size: 18px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-family: 'Gilroy', sans-serif;
+}
+.big-text-for-list{
+    font-size: 2em;
+    color: #000A24;
+    height: 20%;
+    margin-top: 30px;
+    font-weight: 600;
+    font-family: 'Gilroy', sans-serif;
+}
+.list-feed-text{
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Gilroy' sans-serif;
+}
+.list-button-registr{
+    padding: 0;
+    margin-bottom: 25px;
+    height: 55px;
+    color: #FFF;
+    text-align: center;
+    background-color: #2D5BD0;;
+    border-radius: 6px;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Helvetica', sans-serif;
+}
+.line-for-bottom{
+    padding-bottom: 100px;
+}
 @media (min-width: 768px) {
     .header {
         position: absolute;
@@ -217,5 +318,50 @@ body.lock {
 
     .block-resourse {
         margin: 100px 325px 100px 325px;
+    }
+    
+}
+@media (min-width: 320px) and (max-width: 460px) {
+    .list-study {
+        margin: 10px 15px;
+        font-size: 16px;
+        width: 310px;
+    }
+    .list-feed-text{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .list-study-start-point{
+        width: 310px;
+    }
+}
+@media (min-width: 461px) and (max-width: 991px) {
+    .list-study {
+        margin: 10px 15px;
+        font-size: 18px;
+        width: 480px;
+    }
+    .list-feed-text{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .list-study-start-point{
+        width: 480px;
+    }
+
+}
+@media (min-width: 992px) and (max-width: 1280px) {
+    .big-text-for-list{
+        font-size: 1.7em;
+        color: #000A24;
+        height: 15%;
+        margin-top: 15px;
+    }
+    .list-study{
+        font-size: 16px;  
+    }
+    .list-feed-text{
+        font-size: 24px;
+        font-weight: 700;
     }
 }
