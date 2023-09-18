@@ -167,9 +167,14 @@
     font-size: 42px;
 }
 #provide-section .row .col-md-4 p {
-    font-size: 18px;
+font-size: 18px;
 }
-
+#resourse-section .row p {
+    font-size: 20px;
+}
+#resourse-section .block-resourse .col-md-12 p {
+    font-size: 22px;
+}
 @media (min-width: 768px) {
     .header {
         position: absolute;
