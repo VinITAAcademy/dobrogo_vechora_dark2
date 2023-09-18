@@ -155,6 +155,13 @@ body.lock {
 .header-body select option {
     background-color: var(--background-grey);
 }
+.we-provide{
+    border-top: dashed 1px;
+}
+.block-resourse{
+    border-top: dashed 2px;
+    border-bottom: dashed 2px;
+}
 
 @media (min-width: 768px) {
     .header {
