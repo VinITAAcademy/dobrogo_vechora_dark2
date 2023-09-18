@@ -1,5 +1,6 @@
 :root {
-    background color --background: #FFFFFF;
+    /*background color */
+     --background: #FFFFFF;
     --background-dark: #000A24;
     --background-footer: #252323;
     /* text color */
@@ -219,3 +220,7 @@ body.lock {
         margin: 100px 325px 100px 325px;
     }
 }
+/* .block-resourse{
+  margin: 100px 325px 100px 325px;
+}  */
+
