@@ -22,9 +22,9 @@
     filter: blur(2px);
 }
 
-body.lock {
+/* body.lock {
     overflow: hidden;
-}
+} */
 
 .header {
     position: absolute;
@@ -155,12 +155,19 @@ body.lock {
 .header-body select option {
     background-color: var(--background-grey);
 }
-.we-provide{
+#provide-section .row .col-md-4 .we-provide {
     border-top: dashed 1px;
+    font-size: 20px;
 }
-.block-resourse{
+#resourse-section .row .block-resourse {
     border-top: dashed 2px;
     border-bottom: dashed 2px;
+}
+#provide-section .row .col-md-12 h2 {
+    font-size: 42px;
+}
+#provide-section .row .col-md-4 p {
+    font-size: 18px;
 }
 
 @media (min-width: 768px) {
