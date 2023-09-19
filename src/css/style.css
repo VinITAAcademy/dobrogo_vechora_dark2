@@ -1,6 +1,6 @@
 :root {
     /*background color */
-     --background: #FFFFFF;
+    --background: #FFFFFF;
     --background-dark: #000A24;
     --background-footer: #252323;
     /* text color */
@@ -15,6 +15,16 @@
     --form-background: #FFFFFF;
     --input-disabled: #CECECE;
     --background-grey: #2a3035
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('src/fonts/Gilroy-UltraLight.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('src/fonts/HelveticaNowDisplay-ExtLt.woff') format('woff');
 }
 
 /* Стилі для екранів більше 1920 пікселів */
@@ -155,26 +165,144 @@
 .header-body select option {
     background-color: var(--background-grey);
 }
+
 #provide-section .row .col-md-4 .we-provide {
     border-top: dashed 1px;
     font-size: 20px;
 }
+
 #resourse-section .row .block-resourse {
     border-top: dashed 2px;
     border-bottom: dashed 2px;
 }
+
 #provide-section .row .col-md-12 h2 {
     font-size: 42px;
 }
+
 #provide-section .row .col-md-4 p {
-font-size: 18px;
+    font-size: 18px;
 }
+
 #resourse-section .row p {
     font-size: 20px;
 }
+
 #resourse-section .block-resourse .col-md-12 p {
     font-size: 22px;
 }
+
+#list-specialisation .conteiner-for-list-study {
+    font-family: 'Gilroy', sans-serif;
+}
+
+#list-specialisation .backgound-block-study {
+    background-color: var(--background-dark);
+}
+
+#list-specialisation .start-line {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 42px;
+    color: var(--text-white);
+    font-weight: 600;
+    padding: 60px 0;
+    font-family: 'Gilroy', sans-serif;
+}
+
+#list-specialisation .line-list {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Gilroy', sans-serif;
+}
+
+#list-specialisation .image-block-study {
+    width: 100px;
+}
+
+#list-specialisation .text-for-start-point {
+    margin-bottom: 42px;
+    display: flex;
+    font-weight: 400;
+    font-family: 'Gilroy', sans-serif;
+}
+
+#list-specialisation .text-for-start-point-end {
+    margin-top: 42px;
+    display: flex;
+    font-weight: 400;
+    font-family: 'Gilroy', sans-serif;
+}
+
+#list-specialisation .list-study-start-point {
+    color: var(--text-white);
+    height: 490px;
+    margin: 10px 15px;
+    font-size: 22px;
+    align-items: center;
+    text-align: start;
+    font-weight: 400;
+    font-family: 'Gilroy', sans-serif;
+}
+
+#list-specialisation .list-study {
+    background-color: rgb(255, 255, 255);
+    color: var(--text-dark);
+    height: 490px;
+    border-radius: 10px;
+    border: 1px solid #CBCBCB;
+    margin: 10px 15px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-family: 'Gilroy', sans-serif;
+}
+
+#list-specialisation .big-text-for-list {
+    font-size: 2em;
+    color: var(--text-dark);
+    height: 20%;
+    margin-top: 30px;
+    font-weight: 600;
+    font-family: 'Gilroy', sans-serif;
+}
+
+#list-specialisation .list-feed-text {
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Gilroy' sans-serif;
+}
+
+#list-specialisation .list-button-registr {
+    padding: 0;
+    margin-bottom: 25px;
+    height: 55px;
+    color: var(--text-white);
+    text-align: center;
+    background-color: var(--button-background-normal);
+    ;
+    border-radius: 6px;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Helvetica', sans-serif;
+}
+
+#list-specialisation .line-for-bottom {
+    padding-bottom: 100px;
+}
+
 @media (min-width: 768px) {
     .header {
         position: absolute;
@@ -235,8 +363,61 @@ font-size: 18px;
         margin-left: 42px;
     }
 
-}
-/* .block-resourse{
-  margin: 100px 325px 100px 325px;
-}  */
+    /* .block-resourse {
+        margin: 100px 325px 100px 325px;
+    } */
 
+}
+
+@media (min-width: 320px) and (max-width: 460px) {
+    #list-specialisation .list-study {
+        margin: 10px 15px;
+        font-size: 16px;
+        width: 310px;
+    }
+
+    #list-specialisation .list-feed-text {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    #list-specialisation .list-study-start-point {
+        width: 310px;
+    }
+}
+
+@media (min-width: 461px) and (max-width: 991px) {
+    #list-specialisation .list-study {
+        margin: 10px 15px;
+        font-size: 18px;
+        width: 480px;
+    }
+
+    #list-specialisation .list-feed-text {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    #list-specialisation .list-study-start-point {
+        width: 480px;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1280px) {
+    #list-specialisation .big-text-for-list {
+        font-size: 1.7em;
+        color: #000A24;
+        height: 15%;
+        margin-top: 15px;
+    }
+
+    #list-specialisation .list-study {
+        font-size: 16px;
+    }
+
+    #list-specialisation .list-feed-text {
+        font-size: 24px;
+        font-weight: 700;
+    }
+}
