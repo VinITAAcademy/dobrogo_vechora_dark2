@@ -1,8 +1,8 @@
 :root {
-    /* background color */
-    --background:#FFFFFF;
-    --background-dark:#000A24;
-    --background-footer:#252323;
+    /*background color */
+    --background: #FFFFFF;
+    --background-dark: #000A24;
+    --background-footer: #252323;
     /* text color */
     --text-dark: #000A24;
     --text-white: #FFFFFF;
@@ -10,8 +10,9 @@
     --button-background-normal: #083CC0;
     --button-text-normal: #FFFFFF;
     /* navigation menu */
-    --nav-text-normal:#FFFFFF;
+    --nav-text-normal: #FFFFFF;
     /*  form */
+<<<<<<< HEAD
     --form-background:#FFFFFF;
     --input-disabled:#CECECE;
 }
@@ -77,9 +78,24 @@ img {
     display: block;
     margin: 0; 
     padding-left: 10px;
+=======
+    --form-background: #FFFFFF;
+    --input-disabled: #CECECE;
+    --background-grey: #2a3035
+>>>>>>> develop
 }
 
+@font-face {
+    font-family: 'Gilroy';
+    src: url('src/fonts/Gilroy-UltraLight.woff') format('woff');
+}
 
+@font-face {
+    font-family: 'Helvetica';
+    src: url('src/fonts/HelveticaNowDisplay-ExtLt.woff') format('woff');
+}
+
+<<<<<<< HEAD
 @media screen and (max-width: 1024px) {
 
     .text {
@@ -106,3 +122,399 @@ img {
         align-items: center;
     }
 }
+=======
+/* Стилі для екранів більше 1920 пікселів */
+.content.lock {
+    filter: blur(2px);
+}
+
+/* body.lock {
+    overflow: hidden;
+} */
+
+.header {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+
+.header-logo {
+    margin-top: 23px;
+    margin-left: 4px;
+    flex: 0 0 66px;
+}
+
+.header-logo img {
+    max-width: 100%;
+}
+
+.header-menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px 10px 20px 10px;
+    transition: all 0.5s ease 0s;
+    text-align: center;
+}
+
+.header-menu.active {
+    top: 60px;
+    transition: all 0.5s ease 0s;
+}
+
+.header-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-list {
+    display: block;
+    padding: 0;
+}
+
+.header-list li {
+    list-style: none;
+    margin: 0px 0px 30px 0px;
+
+}
+
+.header-link {
+    color: var(--text-white);
+    font-family: Arial, Helvetica;
+    font-weight: 500;
+    line-height: 26px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.header-burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+    margin-top: 27px;
+    z-index: 3;
+    background-color: var(--text-dark);
+    border-radius: 20%;
+}
+
+.header-burger span {
+    position: absolute;
+    left: 7px;
+    width: 55%;
+    background-color: var(--text-white);
+    height: 1px;
+    top: 14px;
+    transition: all 0.5s ease 0s;
+}
+
+.header-burger:before,
+.header-burger:after {
+    content: '';
+    background-color: var(--text-white);
+    position: absolute;
+    width: 55%;
+    height: 1px;
+    left: 7px;
+    transition: all 0.5s ease 0s;
+}
+
+.header-burger::before {
+    top: 9px;
+}
+
+.header-burger::after {
+    bottom: 10px;
+}
+
+.header-burger.active span {
+    transform: scale(0);
+}
+
+.header-burger.active::before {
+    transform: rotate(45deg);
+    top: 14.54px;
+}
+
+.header-burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 14.54px;
+}
+
+.header-body select {
+    background: transparent;
+    border-color: var(--text-white);
+    border-radius: 10%;
+    border-width: 2px;
+    width: 74px;
+    height: 44px;
+    text-align: center;
+    font-size: 18px;
+    color: var(--text-white);
+    margin-right: 12px;
+}
+
+.header-body select option {
+    background-color: var(--background-grey);
+}
+
+#provide-section .row .col-md-4 .we-provide {
+    border-top: dashed 1px;
+    font-size: 20px;
+}
+
+#resourse-section .row .block-resourse {
+    border-top: dashed 2px;
+    border-bottom: dashed 2px;
+}
+
+#provide-section .row .col-md-12 h2 {
+    font-size: 42px;
+}
+
+#provide-section .row .col-md-4 p {
+    font-size: 18px;
+}
+
+#resourse-section .row p {
+    font-size: 20px;
+}
+
+#resourse-section .block-resourse .col-md-12 p {
+    font-size: 22px;
+}
+
+#list-specialisation .conteiner-for-list-study {
+    font-family: 'Gilroy', sans-serif;
+}
+
+#list-specialisation .backgound-block-study {
+    background-color: var(--background-dark);
+}
+
+#list-specialisation .start-line {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 42px;
+    color: var(--text-white);
+    font-weight: 600;
+    padding: 60px 0;
+    font-family: 'Gilroy', sans-serif;
+}
+
+#list-specialisation .line-list {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Gilroy', sans-serif;
+}
+
+#list-specialisation .image-block-study {
+    width: 100px;
+}
+
+#list-specialisation .text-for-start-point {
+    margin-bottom: 42px;
+    display: flex;
+    font-weight: 400;
+    font-family: 'Gilroy', sans-serif;
+}
+
+#list-specialisation .text-for-start-point-end {
+    margin-top: 42px;
+    display: flex;
+    font-weight: 400;
+    font-family: 'Gilroy', sans-serif;
+}
+
+#list-specialisation .list-study-start-point {
+    color: var(--text-white);
+    height: 490px;
+    margin: 10px 15px;
+    font-size: 22px;
+    align-items: center;
+    text-align: start;
+    font-weight: 400;
+    font-family: 'Gilroy', sans-serif;
+}
+
+#list-specialisation .list-study {
+    background-color: rgb(255, 255, 255);
+    color: var(--text-dark);
+    height: 490px;
+    border-radius: 10px;
+    border: 1px solid #CBCBCB;
+    margin: 10px 15px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-family: 'Gilroy', sans-serif;
+}
+
+#list-specialisation .big-text-for-list {
+    font-size: 2em;
+    color: var(--text-dark);
+    height: 20%;
+    margin-top: 30px;
+    font-weight: 600;
+    font-family: 'Gilroy', sans-serif;
+}
+
+#list-specialisation .list-feed-text {
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Gilroy' sans-serif;
+}
+
+#list-specialisation .list-button-registr {
+    padding: 0;
+    margin-bottom: 25px;
+    height: 55px;
+    color: var(--text-white);
+    text-align: center;
+    background-color: var(--button-background-normal);
+    ;
+    border-radius: 6px;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Helvetica', sans-serif;
+}
+
+#list-specialisation .line-for-bottom {
+    padding-bottom: 100px;
+}
+
+@media (min-width: 768px) {
+    .header {
+        position: absolute;
+        width: 100%;
+        z-index: 3;
+    }
+
+    .header-burger {
+        display: none;
+    }
+
+    .header-menu {
+        transform: translate(0, 20%);
+        position: static;
+        width: auto;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .header-body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-list {
+        display: flex;
+    }
+
+    .header-list li {
+        list-style: none;
+        margin-left: 20px;
+    }
+
+    .header {
+        position: absolute;
+        width: 100%;
+        z-index: 3;
+    }
+
+    .header-logo {
+        margin-top: 45px;
+        margin-left: 20px;
+        flex: 0 0 149px;
+    }
+
+    .header-logo img {
+        max-width: 100%;
+    }
+
+    .header-list {
+        margin-top: 47px;
+        margin-right: 50px;
+    }
+
+    .header-list li {
+        margin-left: 42px;
+    }
+
+    /* .block-resourse {
+        margin: 100px 325px 100px 325px;
+    } */
+
+}
+
+@media (min-width: 320px) and (max-width: 460px) {
+    #list-specialisation .list-study {
+        margin: 10px 15px;
+        font-size: 16px;
+        width: 310px;
+    }
+
+    #list-specialisation .list-feed-text {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    #list-specialisation .list-study-start-point {
+        width: 310px;
+    }
+}
+
+@media (min-width: 461px) and (max-width: 991px) {
+    #list-specialisation .list-study {
+        margin: 10px 15px;
+        font-size: 18px;
+        width: 480px;
+    }
+
+    #list-specialisation .list-feed-text {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    #list-specialisation .list-study-start-point {
+        width: 480px;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1280px) {
+    #list-specialisation .big-text-for-list {
+        font-size: 1.7em;
+        color: #000A24;
+        height: 15%;
+        margin-top: 15px;
+    }
+
+    #list-specialisation .list-study {
+        font-size: 16px;
+    }
+
+    #list-specialisation .list-feed-text {
+        font-size: 24px;
+        font-weight: 700;
+    }
+}
+>>>>>>> develop
