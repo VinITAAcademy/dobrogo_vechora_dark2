@@ -438,16 +438,18 @@
     font-weight: normal;
     font-style: normal;
 }
-.container-for-block-partners{
+#main-wrapper {
     width: 100%;
     margin: 0;
     padding: 0;
 }
-.info-for-block-partners{
-    background-color:#000A24;
-    color: aliceblue
+
+#main-wrapper .info-for-block-partners {
+    background-color: #000A24;
+    color: aliceblue;
 }
-.first-text-for-partners{
+
+#main-wrapper .first-text-for-partners {
     color: #FFF;
     font-family: Gilroy;
     font-size: 42px;
@@ -455,57 +457,56 @@
     font-weight: 600;
     line-height: normal;
     padding-top: 80px;
-
 }
-.second-text-for-partners{
+#main-wrapper .second-text-for-partners {
     color: #FFF;
     font-family: HelveticaNowDisplay-ExtLt, sans-serif;
     font-size: 22px;
     font-style: italic;
     font-weight: 500;
-    line-height: 162%;  
+    line-height: 162%;
     letter-spacing: 0.44px;
 }
-.object-logo-intita-partners{
+#main-wrapper .object-logo-intita-partners {
     display: flex;
     justify-content: center;
 }
-.dotted-line {
+#main-wrapper .dotted-line{
     border-top: 5px dotted #FFF; 
     width: 557px; 
     margin: 35px 0;
     padding: 0 50px;
     margin-left: 50px;
 }
-.object-logo-intita-partners{
+#main-wrapper .object-logo-intita-partners{
     display: flex; 
     gap: 40px;
 }
-.img-logo-intita-vn{
+#main-wrapper .img-logo-intita-vn{
     width: 255px;
     height: 80px;
     flex-shrink: 0;
     margin-top: 50px;
 }
-.img-logo-work-young{
+#main-wrapper .img-logo-work-young{
     width: 309px;
     height: 74px;
     flex-shrink: 0;
     margin-top: 50px;
 }
-.img-logo-intita{
+#main-wrapper .img-logo-intita{
     width: 255px;
     height: 80px;
     flex-shrink: 0;
     margin-top: 50px;
 }
-.img-logo-work-people{
+#main-wrapper .img-logo-work-people{
     width: 313px;
     height: 74px;
     flex-shrink: 0;
     margin-top: 50px;
 }
-.semi-transparent-line {
+#main-wrapper .semi-transparent-line {
     width: 1270px;
     height: 4px;
     background: #D8D8D8;
@@ -524,27 +525,27 @@
     }
 }
 @media (min-width: 1024px) {
-    .line-for-block-partners{
+    #main-wrapper .line-for-block-partners{
         display: flex;
     }
-    .img-for-block-partners{
+    #main-wrapper .img-for-block-partners{
         width: 50%;
     }
-    .setting-for-img-partners{
+    #main-wrapper .setting-for-img-partners{
         width: 100%;
     }
-    .info-for-block-partners{
+    #main-wrapper .info-for-block-partners{
         width: 50%;
     }
-    .first-text-for-partners{
+    #main-wrapper .first-text-for-partners{
         padding-left: 50px;
         padding-right: 10%;
     }
-    .second-text-for-partners{
+    #main-wrapper .second-text-for-partners{
         padding-left: 50px;
         padding-right: 10%;
     }
-    .button-for-meet-partners{
+    #main-wrapper .button-for-meet-partners{
         width: 350px;
         height: 70px;
         margin-left: 50px;
@@ -558,58 +559,58 @@
     }
 }
 @media (max-width: 1023px) {
-    .img-for-block-partners{
+    #main-wrapper .img-for-block-partners{
         width: 100%;
     }
-    .setting-for-img-partners{
+    #main-wrapper .setting-for-img-partners{
         width: 100%;
     }
-    .info-for-block-partners{
+    #main-wrapper .info-for-block-partners{
         width: 100%;
         padding-top: 50px;
         padding-bottom: 50px;
         text-align: center;
     }
     
-    .second-text-for-partners{
+    #main-wrapper .second-text-for-partners{
         padding: 0 16px;
     }
-    .dotted-line {
+    #main-wrapper .dotted-line {
         border-top: 5px dotted #FFF; 
         width: 455px; 
         margin: 35px 0;
         padding: 0 50px;
         margin-left: 50px;
     }
-    .object-logo-intita-partners{
+    #main-wrapper .object-logo-intita-partners{
         display: flex; 
         gap: 16px;
     }
-    .img-logo-intita-vn{
+    #main-wrapper .img-logo-intita-vn{
         width: 83px;
         height: 26px;
         flex-shrink: 0;
         margin-top: 50px;
     }
-    .img-logo-work-young{
+    #main-wrapper .img-logo-work-young{
         width: 109px;
         height: 26px;
         flex-shrink: 0;
         margin-top: 50px;
     }
-    .img-logo-intita{
+    #main-wrapper .img-logo-intita{
         width: 83px;
         height: 26px;
         flex-shrink: 0;
         margin-top: 50px;
     }
-    .img-logo-work-people{
+    #main-wrapper .img-logo-work-people{
         width: 109px;
         height: 26px;
         flex-shrink: 0;
         margin-top: 50px;
     }
-    .semi-transparent-line {
+    #main-wrapper .semi-transparent-line {
         width: 435px;
         height: 2px;
         background: #D8D8D8;
