@@ -12,78 +12,13 @@
     /* navigation menu */
     --nav-text-normal: #FFFFFF;
     /*  form */
-<<<<<<< HEAD
-    --form-background:#FFFFFF;
+
+    --form-background: #FFFFFF;
+    --input-disabled: #CECECE;
+    --background-grey: #2a3035;
     --input-disabled:#CECECE;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background: #000000;
-}
-
-.block {
-    position: relative;
-    display: flex;
-    background: #000A24;
-    color: #FFF;
-    font-family: Gilroy;
-    overflow: hidden;
-}
-
-.content {
-    flex: 1;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
-    position: relative;
-    left: 3%;
-}
-
-.text {
-    font-size: 40px;
-    font-weight: 500;
-    line-height: normal;
-    margin-bottom: 20px;
-    
-
-}
-
-button {
-    width: 251px;
-    height: 56px;
-    border-radius: 6px;
-    background: #2D5BD0;
-    display: block;
-    color: #FFF;
-    font-size: 22px;
-}
-
-.image {
-    flex: 1;
-    text-align: center;
-}
-
-img {
-    width: 90%; 
-    float: right;
-    height: auto;
-    display: block;
-    margin: 0; 
-    padding-left: 10px;
-=======
-    --form-background: #FFFFFF;
-    --input-disabled: #CECECE;
-    --background-grey: #2a3035
->>>>>>> develop
-}
 
 @font-face {
     font-family: 'Gilroy';
@@ -95,34 +30,6 @@ img {
     src: url('src/fonts/HelveticaNowDisplay-ExtLt.woff') format('woff');
 }
 
-<<<<<<< HEAD
-@media screen and (max-width: 1024px) {
-
-    .text {
-        font-size: 25px;
-    }
-}
-        
-
-@media screen and (max-width: 768px) {
-    .block {
-        flex-direction: column;
-        }
-
-    .text {
-        font-size: 25px;
-        text-align: center;
-        }
-    
-    .image {
-        display: none;
-    }
-
-    .content {
-        align-items: center;
-    }
-}
-=======
 /* Стилі для екранів більше 1920 пікселів */
 .content.lock {
     filter: blur(2px);
@@ -398,6 +305,145 @@ img {
 #list-specialisation .line-for-bottom {
     padding-bottom: 100px;
 }
+/*#registration-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
+    background: var(--background-dark);
+    max-width: 1920px;
+}
+
+#registration-section .block {
+    position: relative;
+    display: flex;
+    background: var(--background-dark);
+    color: var(--text-white);
+    font-family: Gilroy;
+    overflow: hidden;
+    
+}
+
+#registration-section .content {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    position: relative;
+    left: 3%;
+    
+}
+
+#registration-section .text {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 20px;
+    color: var(--text-white);
+}
+
+#registration-section .button {
+    width: 251px;
+    height: 56px;
+    border-radius: 6px;
+    background: var(--button-background-normal);
+    display: block;
+    color: var(--button-text-normal);
+    font-size: 22px;
+}
+
+#registration-section .image {
+    flex: 1;
+    text-align: center;
+    margin-left: 170px;
+    height: 473;
+}
+
+#registration-section img {
+    width: 90%; 
+    float: right;
+    height: 473px;
+    display: block;
+    margin: 0; 
+    padding-left: 10px;
+    height: 473px;
+}*/
+
+#registration-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: var(--background-dark);
+    max-width: 1920px;
+    width: 100%;
+    height: 473px;
+}
+
+#registration-section .block {
+    position: relative;
+    display: flex;
+    background: var(--background-dark);
+    color: var(--text-white);
+    font-family: Gilroy;
+    overflow: hidden;
+}
+
+#registration-section .content {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    position: relative;
+    left: 3%;
+}
+
+#registration-section .text {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 20px;
+    color: var(--text-white);
+}
+
+#registration-section .button {
+    width: 50%;
+    height: 56px;
+    border-radius: 6px;
+    background: var(--button-background-normal);
+    display: block;
+    color: var(--button-text-normal)
+}
+
+#registration-section .image {
+    flex: 1;
+    text-align: center;
+    max-height: 473px;
+}
+
+#registration-section img {
+    width: 72%; 
+    height: auto;
+    display: block;
+    margin: 0;
+    float: right; 
+    max-height: 473px;
+}
+
+
+
+.grecaptcha-badge {
+    display: none !important;
+}
+
 
 @media (min-width: 768px) {
     .header {
@@ -458,11 +504,28 @@ img {
     .header-list li {
         margin-left: 42px;
     }
+}
 
-    /* .block-resourse {
-        margin: 100px 325px 100px 325px;
-    } */
+@media screen and (max-width: 768px) {
+    #registration-section {
+        height: 216px;
+    }
+    #registration-section .block {
+        flex-direction: column;
+        }
 
+    #registration-section .text {
+        font-size: 20px;
+        text-align: center;
+        }
+    
+    #registration-section .image {
+        display: none;
+    }
+
+    #registration-section .content {
+        align-items: center;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 460px) {
@@ -517,4 +580,13 @@ img {
         font-weight: 700;
     }
 }
->>>>>>> develop
+
+@media screen and (max-width: 1024px) {
+    #registration-section {
+        height: 300px;
+    }
+    #registration-section .text {
+        font-size: 25px;
+    }
+}
+
