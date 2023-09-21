@@ -328,7 +328,6 @@
 }
 
 #registration-section .content {
-    flex: ;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -358,7 +357,6 @@
 }
 
 #registration-section .image {
-    flex: 
     text-align: center;
 }
 
