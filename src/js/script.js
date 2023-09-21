@@ -44,6 +44,14 @@ $(document).ready(function () {
         if (error === 0) {
             resetValidation(form);
             document.querySelector(".thanx").style.display = "block";
+            const formData = new FormData(form);
+
+            const apiUrl = "https://intita.com/api/v1/entrant";
+
+            const response = await fetch(apiUrl, {
+                method: "POST",
+                body: formData,
+            });
         }
     }
 
