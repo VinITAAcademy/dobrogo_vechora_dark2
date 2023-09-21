@@ -3,42 +3,22 @@
     --background: #FFFFFF;
     --background-dark: #000A24;
     --background-footer: #252323;
-<<<<<<< HEAD
     /* text color */
-=======
-
     /* text colors */
->>>>>>> develop
     --text-dark: #000A24;
     --text-white: #FFFFFF;
-
     /* buttons */
     --button-background-normal: #083CC0;
     --button-text-normal: #FFFFFF;
-<<<<<<< HEAD
     /* navigation menu */
     --nav-text-normal: #FFFFFF;
     /*  form */
-
     --form-background: #FFFFFF;
     --input-disabled: #CECECE;
     --background-grey: #2a3035;
     --input-disabled:#CECECE;
 }
 
-
-=======
-
-    /* navigation menu */
-    --nav-text-normal: #FFFFFF;
-
-    /* form */
-    --form-background: #FFFFFF;
-    --input-disabled: #CECECE;
-    --background-grey: #2a3035;
-}
-
->>>>>>> develop
 @font-face {
     font-family: 'Gilroy';
     src: url('src/fonts/Gilroy-UltraLight.woff') format('woff');
@@ -53,10 +33,6 @@
 .content.lock {
     filter: blur(2px);
 }
-
-/* body.lock {
-    overflow: hidden;
-} */
 
 .header {
     position: absolute;
@@ -325,7 +301,6 @@
     padding-bottom: 100px;
 }
 
-<<<<<<< HEAD
 #registration-section {
     display: flex;
     justify-content: center;
@@ -381,7 +356,6 @@
 }
 
 #registration-section img {
-    
     height: auto;
     display: block;
 }
@@ -390,9 +364,6 @@
     display: none !important;
 }
 
-
-=======
->>>>>>> develop
 @media (min-width: 768px) {
     .header {
         position: absolute;
@@ -452,7 +423,6 @@
     .header-list li {
         margin-left: 42px;
     }
-<<<<<<< HEAD
 }
 
 @media screen and (max-width: 768px) {
@@ -475,13 +445,7 @@
     #registration-section .content {
         align-items: center;
     }
-=======
 
-    /* .block-resourse {
-        margin: 100px 325px 100px 325px;
-    } */
-
->>>>>>> develop
 }
 
 @media (min-width: 320px) and (max-width: 460px) {
@@ -536,7 +500,6 @@
         font-weight: 700;
     }
 }
-<<<<<<< HEAD
 
 @media screen and (max-width: 1024px) {
     #registration-section {
@@ -550,7 +513,6 @@
     }
 }
 
-=======
 @font-face {
     font-family: 'Gilroy';
     src: url('fonts/Gilroy-Thin.woff') format('woff'),
@@ -755,4 +717,4 @@
         }
     }
 }
->>>>>>> develop
+
