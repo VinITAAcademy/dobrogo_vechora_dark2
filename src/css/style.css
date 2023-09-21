@@ -3,22 +3,20 @@
     --background: #FFFFFF;
     --background-dark: #000A24;
     --background-footer: #252323;
-
+    /* text color */
     /* text colors */
     --text-dark: #000A24;
     --text-white: #FFFFFF;
-
     /* buttons */
     --button-background-normal: #083CC0;
     --button-text-normal: #FFFFFF;
-
     /* navigation menu */
     --nav-text-normal: #FFFFFF;
-
-    /* form */
+    /*  form */
     --form-background: #FFFFFF;
     --input-disabled: #CECECE;
     --background-grey: #2a3035;
+    --input-disabled:#CECECE;
 }
 
 @font-face {
@@ -35,10 +33,6 @@
 .content.lock {
     filter: blur(2px);
 }
-
-/* body.lock {
-    overflow: hidden;
-} */
 
 .header {
     position: absolute;
@@ -307,6 +301,69 @@
     padding-bottom: 100px;
 }
 
+#registration-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: var(--background-dark);
+    max-width: 1920px;
+    width: 100%;
+    max-height: 473px;
+}
+
+#registration-section .block {
+    position: relative;
+    display: flex;
+    background: var(--background-dark);
+    color: var(--text-white);
+    font-family: Gilroy;
+    overflow: hidden;
+}
+
+#registration-section .content {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    position: relative;
+    left: 3%;
+    margin-right: 10%;
+}
+
+#registration-section .text {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 20px;
+    color: var(--text-white);
+}
+
+#registration-section .button {
+    width: 250px;
+    height: 56px;
+    border-radius: 6px;
+    background: var(--button-background-normal);
+    display: block;
+    color: var(--button-text-normal)
+}
+
+#registration-section .image {
+    text-align: center;
+}
+
+#registration-section img {
+    height: auto;
+    display: block;
+}
+
+.grecaptcha-badge {
+    display: none !important;
+}
+
 @media (min-width: 768px) {
     .header {
         position: absolute;
@@ -366,10 +423,28 @@
     .header-list li {
         margin-left: 42px;
     }
+}
 
-    /* .block-resourse {
-        margin: 100px 325px 100px 325px;
-    } */
+@media screen and (max-width: 768px) {
+    #registration-section {
+        height: 216px;
+    }
+    #registration-section .block {
+        flex-direction: column;
+        }
+
+    #registration-section .text {
+        font-size: 20px;
+        text-align: center;
+        }
+    
+    #registration-section .image {
+        display: none;
+    }
+
+    #registration-section .content {
+        align-items: center;
+    }
 
 }
 
@@ -425,6 +500,19 @@
         font-weight: 700;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    #registration-section {
+        height: 300px;
+    }
+    #registration-section .text {
+        font-size: 25px;
+    }
+    #registration-section img {
+        max-height: 300px;
+    }
+}
+
 @font-face {
     font-family: 'Gilroy';
     src: url('fonts/Gilroy-Thin.woff') format('woff'),
@@ -629,3 +717,4 @@
         }
     }
 }
+
