@@ -43,6 +43,7 @@ body.lock {
     position: absolute;
     width: 100%;
     z-index: 3;
+    overflow: hidden;
 }
 
 .header-logo {
@@ -482,7 +483,6 @@ textarea.form-input {
         position: absolute;
         width: 100%;
         z-index: 3;
-        overflow: auto;
     }
 
     .header-burger {
