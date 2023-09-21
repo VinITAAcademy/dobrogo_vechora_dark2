@@ -17,7 +17,7 @@
     --form-background: #FFFFFF;
     --input-disabled: #CECECE;
     --background-grey: #2a3035;
-    --input-disabled:#CECECE;
+    --input-disabled: #CECECE;
 }
 
 @font-face {
@@ -35,7 +35,7 @@
     filter: blur(2px);
 }
 
-body.lock{
+body.lock {
     overflow: hidden;
 }
 
@@ -364,6 +364,7 @@ body.lock{
     height: auto;
     display: block;
 }
+
 .form {
     display: none;
     position: fixed;
@@ -388,32 +389,39 @@ body.lock{
     border-top: solid 17px blue;
     color: var(--button-background-normal);
 }
-.form-label{
+
+.form-label {
     display: block;
 }
-.form-item{
+
+.form-item {
     margin-bottom: 20px;
 }
-.form-input{
+
+.form-input {
     width: 100%;
     border-radius: 5px;
     border: solid var(--background-grey) 0.5px;
     border-color: rgba(0, 0, 0, 0.5);
 }
-textarea.form-input{
+
+textarea.form-input {
     resize: none;
 }
-.form *{
+
+.form * {
     outline: none;
 }
-.form-input:focus{
+
+.form-input:focus {
     box-shadow: 0 0 10px var(--button-background-normal);
 }
-.form-input.error{
+
+.form-input.error {
     box-shadow: 0 0 10px red;
 }
 
-.button-send{
+.button-send {
     width: 100%;
     background-color: var(--button-background-normal);
     color: var(--button-text-normal);
@@ -422,16 +430,20 @@ textarea.form-input{
     position: relative;
     top: 0;
 }
-.button-send:hover{
+
+.button-send:hover {
     background-color: var(--button-background-hover);
 }
-.button-send:active{
+
+.button-send:active {
     top: 3px;
 }
-.thanx{
+
+.thanx {
     display: none;
 }
-.thanx-content{
+
+.thanx-content {
     background-color: #fff;
     width: 960px;
     height: 469px;
@@ -450,7 +462,8 @@ textarea.form-input{
     align-items: center;
     justify-content: center;
 }
-.thanx-close{
+
+.thanx-close {
     width: 50%;
     background-color: var(--button-background-normal);
     color: var(--button-text-normal);
@@ -459,6 +472,7 @@ textarea.form-input{
     position: relative;
     bottom: 0;
 }
+
 .grecaptcha-badge {
     display: none !important;
 }
@@ -523,17 +537,20 @@ textarea.form-input{
     .header-list li {
         margin-left: 42px;
     }
-    .form-content{
+
+    .form-content {
         max-width: 960px;
         width: 90%;
         max-height: 750px;
         height: 100%;
     }
-    .form-content h2{
+
+    .form-content h2 {
         font-size: 42px;
         padding: 20px 0px 40px;
     }
-    .form-input:hover{
+
+    .form-input:hover {
         box-shadow: 0 0 10px yellow;
     }
 }
@@ -542,15 +559,16 @@ textarea.form-input{
     #registration-section {
         height: 216px;
     }
+
     #registration-section .block {
         flex-direction: column;
-        }
+    }
 
     #registration-section .text {
         font-size: 20px;
         text-align: center;
-        }
-    
+    }
+
     #registration-section .image {
         display: none;
     }
@@ -618,9 +636,11 @@ textarea.form-input{
     #registration-section {
         height: 300px;
     }
+
     #registration-section .text {
         font-size: 25px;
     }
+
     #registration-section img {
         max-height: 300px;
     }
@@ -629,16 +649,18 @@ textarea.form-input{
 @font-face {
     font-family: 'Gilroy';
     src: url('fonts/Gilroy-Thin.woff') format('woff'),
-         url('fonts/Gilroy-Thin.woff2') format('woff2');
+        url('fonts/Gilroy-Thin.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'HelveticaNowDisplay-ExtLt';
     src: url('fonts/HelveticaNowDisplay-ExtLt.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 #main-wrapper {
     width: 100%;
     margin: 0;
@@ -659,6 +681,7 @@ textarea.form-input{
     line-height: normal;
     padding-top: 80px;
 }
+
 #main-wrapper .second-text-for-partners {
     color: #FFF;
     font-family: HelveticaNowDisplay-ExtLt, sans-serif;
@@ -668,85 +691,101 @@ textarea.form-input{
     line-height: 162%;
     letter-spacing: 0.44px;
 }
+
 #main-wrapper .object-logo-intita-partners {
     display: flex;
     justify-content: center;
 }
-#main-wrapper .dotted-line{
-    border-top: 5px dotted #FFF; 
-    width: 557px; 
+
+#main-wrapper .dotted-line {
+    border-top: 5px dotted #FFF;
+    width: 557px;
     margin: 35px 0;
     padding: 0 50px;
     margin-left: 50px;
 }
-#main-wrapper .object-logo-intita-partners{
-    display: flex; 
+
+#main-wrapper .object-logo-intita-partners {
+    display: flex;
     gap: 40px;
 }
-#main-wrapper .img-logo-intita-vn{
+
+#main-wrapper .img-logo-intita-vn {
     width: 255px;
     height: 80px;
     flex-shrink: 0;
     margin-top: 50px;
 }
-#main-wrapper .img-logo-work-young{
+
+#main-wrapper .img-logo-work-young {
     width: 309px;
     height: 74px;
     flex-shrink: 0;
     margin-top: 50px;
 }
-#main-wrapper .img-logo-intita{
+
+#main-wrapper .img-logo-intita {
     width: 255px;
     height: 80px;
     flex-shrink: 0;
     margin-top: 50px;
 }
-#main-wrapper .img-logo-work-people{
+
+#main-wrapper .img-logo-work-people {
     width: 313px;
     height: 74px;
     flex-shrink: 0;
     margin-top: 50px;
 }
+
 #main-wrapper .semi-transparent-line {
     width: 1270px;
     height: 4px;
     background: #D8D8D8;
-    position: relative; 
+    position: relative;
     margin-left: 200px;
     margin-top: 35px;
+
     &::before {
         content: '';
         display: block;
         background: #2D5BD0;
         width: 100px;
         height: 4px;
-        position: absolute; 
-        top: 0; 
-        left: 0; 
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 }
+
 @media (min-width: 1024px) {
-    #main-wrapper .line-for-block-partners{
+    #main-wrapper .line-for-block-partners {
         display: flex;
     }
-    #main-wrapper .img-for-block-partners{
+
+    #main-wrapper .img-for-block-partners {
         width: 50%;
     }
-    #main-wrapper .setting-for-img-partners{
+
+    #main-wrapper .setting-for-img-partners {
         width: 100%;
     }
-    #main-wrapper .info-for-block-partners{
+
+    #main-wrapper .info-for-block-partners {
         width: 50%;
     }
-    #main-wrapper .first-text-for-partners{
+
+    #main-wrapper .first-text-for-partners {
         padding-left: 50px;
         padding-right: 10%;
     }
-    #main-wrapper .second-text-for-partners{
+
+    #main-wrapper .second-text-for-partners {
         padding-left: 50px;
         padding-right: 10%;
     }
-    #main-wrapper .button-for-meet-partners{
+
+    #main-wrapper .button-for-meet-partners {
         width: 350px;
         height: 70px;
         margin-left: 50px;
@@ -759,75 +798,85 @@ textarea.form-input{
         line-height: normal;
     }
 }
+
 @media (max-width: 1023px) {
-    #main-wrapper .img-for-block-partners{
+    #main-wrapper .img-for-block-partners {
         width: 100%;
     }
-    #main-wrapper .setting-for-img-partners{
+
+    #main-wrapper .setting-for-img-partners {
         width: 100%;
     }
-    #main-wrapper .info-for-block-partners{
+
+    #main-wrapper .info-for-block-partners {
         width: 100%;
         padding-top: 50px;
         padding-bottom: 50px;
         text-align: center;
     }
-    
-    #main-wrapper .second-text-for-partners{
+
+    #main-wrapper .second-text-for-partners {
         padding: 0 16px;
     }
+
     #main-wrapper .dotted-line {
-        border-top: 5px dotted #FFF; 
-        width: 455px; 
+        border-top: 5px dotted #FFF;
+        width: 455px;
         margin: 35px 0;
         padding: 0 50px;
         margin-left: 50px;
     }
-    #main-wrapper .object-logo-intita-partners{
-        display: flex; 
+
+    #main-wrapper .object-logo-intita-partners {
+        display: flex;
         gap: 16px;
     }
-    #main-wrapper .img-logo-intita-vn{
+
+    #main-wrapper .img-logo-intita-vn {
         width: 83px;
         height: 26px;
         flex-shrink: 0;
         margin-top: 50px;
     }
-    #main-wrapper .img-logo-work-young{
+
+    #main-wrapper .img-logo-work-young {
         width: 109px;
         height: 26px;
         flex-shrink: 0;
         margin-top: 50px;
     }
-    #main-wrapper .img-logo-intita{
+
+    #main-wrapper .img-logo-intita {
         width: 83px;
         height: 26px;
         flex-shrink: 0;
         margin-top: 50px;
     }
-    #main-wrapper .img-logo-work-people{
+
+    #main-wrapper .img-logo-work-people {
         width: 109px;
         height: 26px;
         flex-shrink: 0;
         margin-top: 50px;
     }
+
     #main-wrapper .semi-transparent-line {
         width: 435px;
         height: 2px;
         background: #D8D8D8;
-        position: relative; 
+        position: relative;
         margin-left: 50px;
         margin-top: 35px;
+
         &::before {
             content: '';
             display: block;
             background: #2D5BD0;
             width: 32px;
             height: 2px;
-            position: absolute; 
-            top: 0; 
-            left: 0; 
+            position: absolute;
+            top: 0;
+            left: 0;
         }
     }
 }
-

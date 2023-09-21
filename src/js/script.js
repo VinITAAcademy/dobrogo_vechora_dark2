@@ -1,16 +1,17 @@
 'use strict';
 
 $(document).ready(function () {
-    $(".header-burger").click(function (event) {
+    $(".header-burger .show-form-partner-program-questionnaire").click(function (event) {
         $(".header-burger,.header-menu").toggleClass("active");
         $("body").toggleClass("lock");
     });
-    $("#show-form").click(function () {
+    $(".show-form-partner-program-questionnaire").click(function () {
         $("#form").fadeIn();
     });
 
     $(".close, .form").click(function () {
         $("#form").fadeOut();
+        $("body").toggleClass("lock");
     });
 
     $(".form-content").click(function (event) {
@@ -20,7 +21,7 @@ $(document).ready(function () {
         mask: '+38 (099) 999-99-99',
         greedy: false
     });
-    $("#show-form").click(function (event) {
+    $(".show-form-partner-program-questionnaire").click(function (event) {
         $("body").toggleClass("lock");
     });
 
