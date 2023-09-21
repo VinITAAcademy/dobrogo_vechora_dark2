@@ -3,12 +3,19 @@
     --background: #FFFFFF;
     --background-dark: #000A24;
     --background-footer: #252323;
+<<<<<<< HEAD
     /* text color */
+=======
+
+    /* text colors */
+>>>>>>> develop
     --text-dark: #000A24;
     --text-white: #FFFFFF;
+
     /* buttons */
     --button-background-normal: #083CC0;
     --button-text-normal: #FFFFFF;
+<<<<<<< HEAD
     /* navigation menu */
     --nav-text-normal: #FFFFFF;
     /*  form */
@@ -20,6 +27,18 @@
 }
 
 
+=======
+
+    /* navigation menu */
+    --nav-text-normal: #FFFFFF;
+
+    /* form */
+    --form-background: #FFFFFF;
+    --input-disabled: #CECECE;
+    --background-grey: #2a3035;
+}
+
+>>>>>>> develop
 @font-face {
     font-family: 'Gilroy';
     src: url('src/fonts/Gilroy-UltraLight.woff') format('woff');
@@ -306,6 +325,7 @@
     padding-bottom: 100px;
 }
 
+<<<<<<< HEAD
 #registration-section {
     display: flex;
     justify-content: center;
@@ -371,6 +391,8 @@
 }
 
 
+=======
+>>>>>>> develop
 @media (min-width: 768px) {
     .header {
         position: absolute;
@@ -430,6 +452,7 @@
     .header-list li {
         margin-left: 42px;
     }
+<<<<<<< HEAD
 }
 
 @media screen and (max-width: 768px) {
@@ -452,6 +475,13 @@
     #registration-section .content {
         align-items: center;
     }
+=======
+
+    /* .block-resourse {
+        margin: 100px 325px 100px 325px;
+    } */
+
+>>>>>>> develop
 }
 
 @media (min-width: 320px) and (max-width: 460px) {
@@ -506,6 +536,7 @@
         font-weight: 700;
     }
 }
+<<<<<<< HEAD
 
 @media screen and (max-width: 1024px) {
     #registration-section {
@@ -519,3 +550,209 @@
     }
 }
 
+=======
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-Thin.woff') format('woff'),
+         url('fonts/Gilroy-Thin.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelveticaNowDisplay-ExtLt';
+    src: url('fonts/HelveticaNowDisplay-ExtLt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+#main-wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#main-wrapper .info-for-block-partners {
+    background-color: #000A24;
+    color: aliceblue;
+}
+
+#main-wrapper .first-text-for-partners {
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-top: 80px;
+}
+#main-wrapper .second-text-for-partners {
+    color: #FFF;
+    font-family: HelveticaNowDisplay-ExtLt, sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 162%;
+    letter-spacing: 0.44px;
+}
+#main-wrapper .object-logo-intita-partners {
+    display: flex;
+    justify-content: center;
+}
+#main-wrapper .dotted-line{
+    border-top: 5px dotted #FFF; 
+    width: 557px; 
+    margin: 35px 0;
+    padding: 0 50px;
+    margin-left: 50px;
+}
+#main-wrapper .object-logo-intita-partners{
+    display: flex; 
+    gap: 40px;
+}
+#main-wrapper .img-logo-intita-vn{
+    width: 255px;
+    height: 80px;
+    flex-shrink: 0;
+    margin-top: 50px;
+}
+#main-wrapper .img-logo-work-young{
+    width: 309px;
+    height: 74px;
+    flex-shrink: 0;
+    margin-top: 50px;
+}
+#main-wrapper .img-logo-intita{
+    width: 255px;
+    height: 80px;
+    flex-shrink: 0;
+    margin-top: 50px;
+}
+#main-wrapper .img-logo-work-people{
+    width: 313px;
+    height: 74px;
+    flex-shrink: 0;
+    margin-top: 50px;
+}
+#main-wrapper .semi-transparent-line {
+    width: 1270px;
+    height: 4px;
+    background: #D8D8D8;
+    position: relative; 
+    margin-left: 200px;
+    margin-top: 35px;
+    &::before {
+        content: '';
+        display: block;
+        background: #2D5BD0;
+        width: 100px;
+        height: 4px;
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+    }
+}
+@media (min-width: 1024px) {
+    #main-wrapper .line-for-block-partners{
+        display: flex;
+    }
+    #main-wrapper .img-for-block-partners{
+        width: 50%;
+    }
+    #main-wrapper .setting-for-img-partners{
+        width: 100%;
+    }
+    #main-wrapper .info-for-block-partners{
+        width: 50%;
+    }
+    #main-wrapper .first-text-for-partners{
+        padding-left: 50px;
+        padding-right: 10%;
+    }
+    #main-wrapper .second-text-for-partners{
+        padding-left: 50px;
+        padding-right: 10%;
+    }
+    #main-wrapper .button-for-meet-partners{
+        width: 350px;
+        height: 70px;
+        margin-left: 50px;
+        color: #FFF;
+        font-family: HelveticaNowDisplay-ExtLt, sans-serif;
+        text-align: center;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+@media (max-width: 1023px) {
+    #main-wrapper .img-for-block-partners{
+        width: 100%;
+    }
+    #main-wrapper .setting-for-img-partners{
+        width: 100%;
+    }
+    #main-wrapper .info-for-block-partners{
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    
+    #main-wrapper .second-text-for-partners{
+        padding: 0 16px;
+    }
+    #main-wrapper .dotted-line {
+        border-top: 5px dotted #FFF; 
+        width: 455px; 
+        margin: 35px 0;
+        padding: 0 50px;
+        margin-left: 50px;
+    }
+    #main-wrapper .object-logo-intita-partners{
+        display: flex; 
+        gap: 16px;
+    }
+    #main-wrapper .img-logo-intita-vn{
+        width: 83px;
+        height: 26px;
+        flex-shrink: 0;
+        margin-top: 50px;
+    }
+    #main-wrapper .img-logo-work-young{
+        width: 109px;
+        height: 26px;
+        flex-shrink: 0;
+        margin-top: 50px;
+    }
+    #main-wrapper .img-logo-intita{
+        width: 83px;
+        height: 26px;
+        flex-shrink: 0;
+        margin-top: 50px;
+    }
+    #main-wrapper .img-logo-work-people{
+        width: 109px;
+        height: 26px;
+        flex-shrink: 0;
+        margin-top: 50px;
+    }
+    #main-wrapper .semi-transparent-line {
+        width: 435px;
+        height: 2px;
+        background: #D8D8D8;
+        position: relative; 
+        margin-left: 50px;
+        margin-top: 35px;
+        &::before {
+            content: '';
+            display: block;
+            background: #2D5BD0;
+            width: 32px;
+            height: 2px;
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+        }
+    }
+}
+>>>>>>> develop
