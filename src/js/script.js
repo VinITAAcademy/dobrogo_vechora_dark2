@@ -32,7 +32,7 @@ $(document).ready(function () {
         form[0].reset();
     });
 
-    const form = document.getElementById("form");
+    const form = document.getElementById("form-partner-program-questionnaire");
 
     form.addEventListener("submit", formSend);
 
@@ -42,16 +42,32 @@ $(document).ready(function () {
         let error = formValidate(form);
 
         if (error === 0) {
-            resetValidation(form);
-            document.querySelector(".thanx").style.display = "block";
-            const formData = new FormData(form);
+            grecaptcha.ready(function () {
+                grecaptcha.execute('6LfjdXUnAAAAAO68m7JLRXV61_dnTkHgl9k5xW1j', { action: 'submit' }).then(function (token) {
+                    resetValidation(form);
+                    document.querySelector(".thanx").style.display = "block";
 
-            const apiUrl = "https://intita.com/api/v1/entrant";
+                    const formData = new FormData(form);
+                    const apiUrl = "https://intita.com/api/v1/entrant";
 
-            const response = await fetch(apiUrl, {
-                method: "POST",
-                body: formData,
+                    formData.append('g-recaptcha-response', token);
+
+                    $.ajax({
+                        url: apiUrl,
+                        data: formData,
+                        processData: false,
+                        contentType: false,
+                        type: 'POST',
+                        success: function (data) {
+                            return;
+                        },
+                        error: function (data) {
+                            return;
+                        }
+                    });
+                });
             });
+
         }
     }
 
