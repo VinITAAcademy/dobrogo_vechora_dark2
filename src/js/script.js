@@ -24,7 +24,7 @@ $(document).ready(function () {
     $(".show-form-partner-program-questionnaire").click(function (event) {
         $("body").toggleClass("lock");
     });
-    $(".pin-block-patriot").click(function () {
+    $(".form-button-paticipant").click(function () {
         $("#form-for-paticipant").fadeIn();
     });
     $(".close, .form-paticipant").click(function () {
