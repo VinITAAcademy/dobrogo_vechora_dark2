@@ -18,6 +18,7 @@
     --input-disabled: #CECECE;
     --background-grey: #2a3035;
     --input-disabled: #CECECE;
+    --input-error: #ff0000;
 }
 
 @font-face {
@@ -419,7 +420,7 @@ textarea.form-input {
 }
 
 .form-input.error {
-    box-shadow: 0 0 10px red;
+    box-shadow: 0 0 10px var(--input-error);
 }
 
 .button-send {
@@ -551,7 +552,7 @@ textarea.form-input {
     }
 
     .form-input:hover {
-        box-shadow: 0 0 10px yellow;
+        box-shadow: 0 0 10px var(--button-background-normal);
     }
 }
 
