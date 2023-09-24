@@ -19,6 +19,11 @@
     --background-grey: #2a3035;
     --input-disabled: #CECECE;
     --input-error: #ff0000;
+    /* footer */
+    --footer-icons-active: #00ff00;
+    --footer-icons-border-active: #0000ff;
+    --foter-border:#6D6D6D;
+    --footer-a-active:#00ff00;
 }
 
 @font-face {
@@ -311,13 +316,6 @@ body.lock {
     }
 }
 
-
-
-
-
-
-
-
 #provide-section .row .col-md-4 .we-provide {
     border-top: dashed 1px;
     font-size: 20px;
@@ -445,7 +443,6 @@ body.lock {
     color: var(--text-white);
     text-align: center;
     background-color: var(--button-background-normal);
-    ;
     border-radius: 6px;
     font-size: 22px;
     font-weight: 400;
@@ -514,6 +511,67 @@ body.lock {
     height: auto;
     display: block;
 }
+#footer-section {
+    background-color: var(--background-footer);
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-section .row .col-lg-5 .menu-footer li {
+    font-size: 18px;
+}
+
+#footer-section .row .col-lg-4 .contact {
+    font-size: 28px;
+}
+
+#footer-section .row .col-lg-3 .footer-img {
+    width: 149px;
+    height:96px;
+}
+
+#footer-section .row .footer-text {
+    color: var(--text-white);
+}
+
+#footer-section a {
+    border: var(--foter-border);
+    border-width: 1;
+    border-radius: 10%;
+    text-decoration: none;
+    color: var(--text-white);
+}
+
+#footer-section .social-icons a {
+    border: var(--foter-border);
+    border-style: solid;
+    border-width: 1;
+    border-radius: 10%;
+    text-decoration: none;
+    color: var(--text-white);
+}
+
+#footer-section a:hover,
+#footer-section a:active {
+    color: var(--footer-a-active) ;
+    border-width: 1;
+    border-radius: 10;
+
+}
+
+#footer-section .social-icons a:hover,
+#footer-section .social-icons a:active {
+    color: var(--footer-icons-active);
+    border: var(--footer-icons-border-active);
+    border-style: solid;
+    border-width: 1;
+    border-radius: 10;
+}
+
+#footer-section p {
+    color: var(--text-white);
+}
+
 
 .form {
     display: none;
@@ -545,7 +603,8 @@ body.lock {
 }
 
 .form-item {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    width: 70%;
 }
 
 .form-input {
@@ -553,6 +612,8 @@ body.lock {
     border-radius: 5px;
     border: solid var(--background-grey) 0.5px;
     border-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    margin: 0 auto;
 }
 
 textarea.form-input {
@@ -572,7 +633,7 @@ textarea.form-input {
 }
 
 .button-send {
-    width: 100%;
+    width: 70%;
     background-color: var(--button-background-normal);
     color: var(--button-text-normal);
     font-size: 18px;
@@ -633,6 +694,43 @@ textarea.form-input {
 
 .grecaptcha-badge {
     display: none !important;
+}
+
+.form-paticipant {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 4;
+}
+
+.form-content-paticipant {
+    background-color: #fff;
+    width: 100%;
+    height: 800px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    border-top: solid 17px blue;
+    color: var(--button-background-normal);
+    overflow: auto;
+}
+
+.formCheck {
+    color: var(--background-dark);
+    display: flex;
+    align-items: center;
+}
+
+.formCheck input[type="checkbox"] {
+    margin-right: 10px;
+    /* Задаємо відстань між чекбоксом і текстом */
 }
 
 @media (min-width: 768px) {
@@ -702,6 +800,12 @@ textarea.form-input {
         height: 100%;
     }
 
+    .form-content-paticipant {
+        max-width: 960px;
+        width: 90%;
+        height: 750px;
+    }
+
     .form-content h2 {
         font-size: 42px;
         padding: 20px 0px 40px;
@@ -711,7 +815,6 @@ textarea.form-input {
         box-shadow: 0 0 10px var(--button-background-normal);
     }
 }
-
 @media screen and (max-width: 768px) {
     #registration-section {
         height: 216px;
@@ -1037,3 +1140,4 @@ textarea.form-input {
         }
     }
 }
+
