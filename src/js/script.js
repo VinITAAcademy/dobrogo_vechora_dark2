@@ -14,38 +14,58 @@ $(document).ready(function () {
         $("body").toggleClass("lock");
     });
 
-    $(".form-content").click(function (event) {
+    $(".form-content, .form-content-paticipant").click(function (event) {
         event.stopPropagation();
     });
-    jQuery('#phone').inputmask({
+    jQuery('#phone, #phone1').inputmask({
         mask: '+38 (099) 999-99-99',
         greedy: false
     });
     $(".show-form-partner-program-questionnaire").click(function (event) {
         $("body").toggleClass("lock");
     });
+    $(".form-button-paticipant").click(function () {
+        $("#form-for-paticipant").fadeIn();
+    });
+    $(".close, .form-paticipant").click(function () {
+        $("#form-for-paticipant").fadeOut();
+        $("body").toggleClass("lock");
+    });
+    $(".pin-block-patriot").click(function (event) {
+        $("body").toggleClass("lock");
+    });
+
 
     document.querySelector(".thanx-close").addEventListener("click", function () {
         document.querySelector(".thanx").style.display = "none";
         $("#form").fadeOut();
+        $("body").toggleClass("lock");
         var form = $("#form-partner-program-questionnaire");
         form[0].reset();
     });
 
-    const form = document.getElementById("form-partner-program-questionnaire");
+    const formPartner = document.getElementById("form-partner-program-questionnaire");
+    const formPaticipant = document.getElementById("form-participant-program");
 
-    form.addEventListener("submit", formSend);
-
-    async function formSend(event) {
+    formPartner.addEventListener("submit", function(event){
         event.preventDefault();
+        formSend(formPartner);
+    });
+
+    formPaticipant.addEventListener("submit", function(event){
+        event.preventDefault();
+        formSend(formPaticipant);
+    });
+
+    function formSend(form) {
 
         let error = formValidate(form);
 
         if (error === 0) {
+            document.querySelector(".thanx").style.display = "block";
             grecaptcha.ready(function () {
                 grecaptcha.execute('6LfjdXUnAAAAAO68m7JLRXV61_dnTkHgl9k5xW1j', { action: 'submit' }).then(function (token) {
                     resetValidation(form);
-                    document.querySelector(".thanx").style.display = "block";
 
                     const formData = new FormData(form);
                     const apiUrl = "https://intita.com/api/v1/entrant";
@@ -73,7 +93,7 @@ $(document).ready(function () {
 
     function formValidate(form) {
         let error = 0;
-        let formRequired = document.querySelectorAll(".required");
+        let formRequired = form.querySelectorAll(".required");
 
         for (let i = 0; i < formRequired.length; i++) {
             const input = formRequired[i];
