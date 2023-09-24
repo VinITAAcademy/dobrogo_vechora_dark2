@@ -65,7 +65,7 @@
                     які постраждали <br> від наслідків
                     війни росії проти України та <br> українського народу.
                 </p>
-                <div class="pin-block-patriot btn btn-primary">Зареєструватися</div>
+                <div class="pin-block-patriot btn btn-primary form-button-paticipant">Зареєструватися</div>
             </div>
         </div>
         <div class="second-content-block-patriot">
@@ -130,7 +130,7 @@
         <div class="content">
             <div class="text">Ви постраждали від наслідків війни в Україні - зареєструйтесь, щоб прийняти участь в
                 програмі:</div>
-            <button class="button">Зареєструватися</button>
+            <button class="button form-button-paticipant">Зареєструватися</button>
         </div>
         <div class="image">
             <img src="./src/images/registration.svg" alt="Зображення">
@@ -301,34 +301,11 @@
                         допомогти,<br> будь ласка,<a href="https://www.robotamolodi.org/">зв’яжіться з нами</a>!
                     </p>
                 </div>
-                <div class="col-lg-4">
-                    <div class="d-flex justify-content-lg-end">
-                        <ul class="social-icons list-unstyled d-flex">
-                            <li class="me-3"><a href="https://t.me/share/url?url=https://intita.com" target="_blank">
-                                    <i class="fa-brands fa-telegram p-1"></i></a></li>
-                            <li class="me-3"><a href="https://www.facebook.com/sharer/sharer.php?u=https://intita.com"
-                                    target="_blank">
-                                    <i class="fa-brands fa-facebook p-1"></i></a></li>
-                            <li class="me-3"><a href="https://api.whatsapp.com/send?text=https://intita.com"
-                                    target="_blank">
-                                    <i class="fa-brands fa-whatsapp p-1"></i></a></li>
-                            <li class="me-3"><a href="viber://forward?text=https://intita.com" target="_blank">
-                                    <i class="fa-brands fa-viber p-1"></i></a></li>
-                            <li class="me-3"><a href="https://twitter.com/intent/tweet?url=https://intita.com"
-                                    target="_blank">
-                                    <i class="fa-brands fa-twitter p-1"></i></a></li>
-                            <li class=""><a
-                                    href="https://www.linkedin.com/shareArticle?mini=true&url=https://intita.com"
-                                    target="_blank">
-                                    <i class="fa-brands fa-linkedin-in p-1"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 d-lg-none d-sm-block d-md-none d-block mt-4">
-                        <p class="footer-text-main text-sm-start text-lg-end"><a href="tel:+380674311921">+38 067 431 19 21</a></p>
-                        <p class="footer-text-main text-sm-start text-lg-end"><a
-                                href="mailto:Ita.in.ua@gmail.com">Ita.in.ua@gmail.com</a>
-                        </p>
-                    </div>
+                <div class="col-lg-4 d-lg-none d-sm-block d-md-none d-block mt-4">
+                    <p class="footer-text-main text-sm-start text-lg-end"><a href="tel:+380674311921">+38 067 431 19 21</a></p>
+                    <p class="footer-text-main text-sm-start text-lg-end"><a href="mailto:Ita.in.ua@gmail.com">Ita.in.ua@gmail.com</a>
+                    </p>
+                </div>
                 </div>
                 <div class="footer-text text-center">
                     <a href="#">Розроблено студентами Вінницької <br>ІТ-Академії 2023</a>
@@ -336,8 +313,8 @@
                 <div class="footer-text text-end arrow">
                     <a href="#"><i class="fa-solid fa-arrow-up fa-beat-fade mb-5"></i></a>
                 </div>
-            </div>
-        </div>
+                </div>
+                </div>
     </footer>
     <div class="row">
         <div class="col-12 text-center">
@@ -347,7 +324,7 @@
     <div id="form" class="form">
         <div class="form-content">
             <h2 class="d-flex justify-content-center">Анкета для партнерів програми</h2>
-            <form action="#" id="form-partner-program-questionnaire">
+            <form action="#" id="form-partner-program-questionnaire" class="d-flex flex-column align-items-center">
                 <div class="form-item">
                     <input type="text" name="name" id="name" placeholder="Ім'я" class="form-input required name">
                 </div>
@@ -376,6 +353,58 @@
                         class="form-input"></textarea>
                 </div>
                 <button type="submit" class="button-send" id="openPopup">Відправити</button>
+                <input type="hidden" name="organization_id" value="110">
+            </form>
+        </div>
+    </div>
+    <div id="form-for-paticipant" class="form-paticipant">
+        <div class="form-content-paticipant">
+            <h2 class="d-flex justify-content-center">Анкета для учасника програми</h2>
+            <form action="#" id="form-participant-program" class="d-flex flex-column align-items-center">
+                <div class="form-item">
+                    <input type="text" name="name" placeholder="Ім'я" class="form-input required name">
+                </div>
+                <div class="form-item">
+                    <input type="text" name="surname" placeholder="Призвіще" class="form-input required surname">
+                </div>
+                <div class="form-item">
+                    <input type="email" name="email" placeholder="Email" class="form-input required email">
+                </div>
+                <div class="form-item">
+                    <input type="tel" name="phone" id="phone1" placeholder="Мобільний телефон"
+                        class="form-input required phone">
+                </div>
+                <div class="form-item">
+                    <input type="text" name="temporary residence"
+                        placeholder="Місто/село, країна теперішнього тимчасового проживання" class="form-input">
+                </div>
+                <div class="form-item">
+                    <input type="text" name="city-return" placeholder="Місто/село,в Україні куди плануєте повернутись"
+                        class="form-input">
+                </div>
+                <div class="form-item">
+                    <label for="info-about-us" class="form-label">Звідки отримали інформацію про нас?</label>
+                    <textarea name="info-about-us" name="about" cols="30" rows="2" class="form-input"></textarea>
+                </div>
+                <div class="form-item d-flex flex-column">
+                    <h2>Бажаний напрямок підготовки</h2>
+                    <div class="formCheck"><input type="checkbox"> <label for="task1">Автоматизоване тестування</label>
+                    </div>
+                    <div class="formCheck"><input type="checkbox"> <label for="task2">Проектний менеджмент (PM)</label>
+                        </li>
+                    </div>
+                    <div class="formCheck"><input type="checkbox"> <label for="task3">HR & TA (людські ресурси і
+                            залучення талантів)</label></div>
+                    <div class="formCheck"><input type="checkbox"> <label for="task4">Школа Хакерів для дітей
+                            6-16р</label></div>
+                    <div class="formCheck"><input type="checkbox"> <label for="task5">Англійська для ІТ</label></div>
+                    <div class="formCheck"><input type="checkbox"> <label for="task5">Системне адміністрування</label>
+                    </div>
+                    <div class="formCheck"><input type="checkbox"> <label for="task5">Ручне тестування</label></div>
+                    <div class="formCheck"><input type="checkbox"> <label for="task5">Веб-дизайн (UI/UX)</label></div>
+                    <div class="formCheck"><input type="checkbox"> <label for="task5">Програмування</label></div>
+                </div>
+                <button type="submit" class="button-send">Відправити</button>
                 <input type="hidden" name="organization_id" value="110">
             </form>
         </div>
