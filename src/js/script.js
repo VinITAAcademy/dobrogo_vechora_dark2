@@ -1,7 +1,7 @@
 'use strict';
 
 $(document).ready(function () {
-    $(".header-burger .show-form-partner-program-questionnaire").click(function (event) {
+    $(".header-burger").click(function (event) {
         $(".header-burger,.header-menu").toggleClass("active");
         $("body").toggleClass("lock");
     });
