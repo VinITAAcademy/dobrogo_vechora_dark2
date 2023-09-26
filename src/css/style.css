@@ -492,6 +492,7 @@ body.lock {
     line-height: normal;
     margin-bottom: 20px;
     color: var(--text-white);
+    font-family: 'Gilroy', sans-serif;
 }
 
 #registration-section .button {
@@ -502,6 +503,11 @@ body.lock {
     display: block;
     color: var(--button-text-normal);
     font-size: 22px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+#registration-section .button:hover {
+    background-color: var(--button-background-hover);
 }
 
 #registration-section .image {
@@ -912,6 +918,11 @@ textarea.form-input {
 
     #registration-section img {
         max-height: 300px;
+    }
+    #registration-section .button {
+        width: 280px;
+        height: 63px;
+        font-size: 18px;
     }
 }
 
