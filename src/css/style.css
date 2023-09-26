@@ -497,7 +497,7 @@ body.lock {
 
 #registration-section .button {
     width: 350px;
-    height: 76px;
+    height: 75px;
     border-radius: 6px;
     background: var(--button-background-normal);
     display: block;
