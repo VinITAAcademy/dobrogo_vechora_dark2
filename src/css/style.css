@@ -516,6 +516,7 @@ body.lock {
     background-color: var(--background-footer);
     justify-content: center;
     align-items: center;
+    max-width: 1920px;
 }
 
 #footer-section .row .col-lg-5 .menu-footer li {
@@ -1147,4 +1148,16 @@ textarea.form-input {
     padding-bottom: 20px;
     padding-top: 20px;
    }
+}
+@media (max-width: 1920px) {
+    #footer-section .social-icons a {
+        border: var(--foter-border);
+        border-style: solid;
+        border-width: 1;
+        text-decoration: none;
+        color: var(--text-white);
+        font-size: 20px;
+        padding: 5px;
+        border-radius: 6px;
+    }
 }
