@@ -482,8 +482,8 @@ body.lock {
     align-items: flex-start;
     padding: 20px;
     position: relative;
-    left: 3%;
-    margin-right: 10%;
+    left: 10%;
+    margin-right: 15%;
 }
 
 #registration-section .text {
@@ -492,15 +492,22 @@ body.lock {
     line-height: normal;
     margin-bottom: 20px;
     color: var(--text-white);
+    font-family: 'Gilroy', sans-serif;
 }
 
 #registration-section .button {
-    width: 250px;
-    height: 56px;
+    width: 350px;
+    height: 76px;
     border-radius: 6px;
     background: var(--button-background-normal);
     display: block;
-    color: var(--button-text-normal)
+    color: var(--button-text-normal);
+    font-family: 'Helvetica', sans-serif;
+    font-size: 22px;
+}
+
+#registration-section .button:hover {
+    background-color: var(--button-background-hover);
 }
 
 #registration-section .image {
@@ -839,6 +846,12 @@ textarea.form-input {
         align-items: center;
     }
 
+    #registration-section .button {
+        width: 234px;
+        height: 60px;
+        font-size: 18px;
+    }
+
 }
 
 @media (min-width: 320px) and (max-width: 460px) {
@@ -900,11 +913,17 @@ textarea.form-input {
     }
 
     #registration-section .text {
-        font-size: 25px;
+        font-size: 23px;
     }
 
     #registration-section img {
         max-height: 300px;
+    }
+   
+    #registration-section .button {
+        width: 280px;
+        height: 63px;
+        font-size: 18px;
     }
 }
 
