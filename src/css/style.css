@@ -317,9 +317,15 @@ body.lock {
 }
 
 #provide-section .row .col-md-4 .we-provide {
-    border-top: dashed 1px;
     font-size: 20px;
+    background-image: url(../images/border.svg);
+    background-repeat: repeat-x;
+    max-width: 480px;
 }
+.row {
+    margin-left: 0;
+    margin-right: 0;
+ } 
 
 #resourse-section .row .block-resourse {
     border-top: dashed 2px;
@@ -1143,8 +1149,8 @@ textarea.form-input {
     }
 }
 @media (min-width: 320px) and (max-width: 767px){
-   #provide-section img {
-    padding-bottom: 20px;
-    padding-top: 20px;
-   }
+    #provide-section img {
+     padding-bottom: 20px;
+     padding-top: 20px;
+    }
 }
