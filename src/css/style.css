@@ -464,7 +464,7 @@ body.lock {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
+    padding: 0;
     background: var(--background-dark);
     max-width: 1920px;
     width: 100%;
