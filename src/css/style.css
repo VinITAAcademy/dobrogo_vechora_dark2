@@ -24,6 +24,10 @@
     --footer-icons-border-active: #0000ff;
     --foter-border: #6D6D6D;
     --footer-a-active: #00ff00;
+     /* scroll */
+     --color-scroll :#D8D8D8;
+     --color-skroll-hover :#2D5BD0;
+
 }
 
 @font-face {
@@ -1168,10 +1172,16 @@ textarea.form-input {
     }
 }
 @media (min-width: 320px) and (max-width: 767px){
-   #provide-section img {
-    padding-bottom: 20px;
-    padding-top: 20px;
+    #provide-section img {
+     padding-bottom: 20px;
+     padding-top: 20px;
    }
+}
+
+@media (min-width: 768px)and (max-width: 1920px) {
+    #scroll-parters .col img {
+     width: calc(100% / 4);
+    }
 }
 @media (max-width: 1920px) {
     #footer-section .social-icons a {
@@ -1183,5 +1193,45 @@ textarea.form-input {
         font-size: 20px;
         padding: 5px;
         border-radius: 6px;
+    }
+}
+#scroll-parters .col {
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding-top: 20px;
+}
+
+#scroll-parters .col img {
+    width: calc(95% / 4);
+    max-width: 100%;
+    height: auto;
+    padding-top: 20px;
+}
+
+#scroll-parters ::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    border-radius: 4px;
+}
+
+#scroll-parters ::-webkit-scrollbar-thumb {
+    background-color: var(--color-scroll);
+    border-radius: 4px;
+    width: 2px;
+}
+
+#scroll-parters ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-skroll-hover);
+    border-radius: 4px;
+
+}
+
+#scroll-parters ::-webkit-scrollbar-track {
+    background-color: var(--color-scroll);
+    border-radius: 4px;
+}
+@media(max-width: 767px) and (min-width: 320px) {
+    #scroll-parters .col img {
+        width: calc(100% / 3);
     }
 }
