@@ -34,6 +34,12 @@ $(document).ready(function () {
     $(".pin-block-patriot").click(function (event) {
         $("body").toggleClass("lock");
     });
+    document.getElementById("name").addEventListener("input", function() {
+        var inputValue = this.value;
+        var sanitizedValue = inputValue.replace(/[^A-Za-zА-Яа-яЁёІіЇїҐґ\s'’-]/g, '');
+        sanitizedValue = sanitizedValue.substr(0, 20); // Обмеження до 20 символів
+        this.value = sanitizedValue;
+    });
 
 
     document.querySelector(".thanx-close").addEventListener("click", function () {
