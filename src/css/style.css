@@ -1234,8 +1234,9 @@ textarea.form-input {
         width: calc(100% / 3);
     }
 }
+
 #provide-section .ratio-16x9 iframe {
     width: 1270px;
     height: 602px;
     position: relative;
-   }
+}
