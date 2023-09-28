@@ -37,7 +37,13 @@ $(document).ready(function () {
     document.getElementById("name").addEventListener("input", function() {
         var inputValue = this.value;
         var sanitizedValue = inputValue.replace(/[^A-Za-zА-Яа-яЁёІіЇїҐґ\s'’-]/g, '');
-        sanitizedValue = sanitizedValue.substr(0, 20); // Обмеження до 20 символів
+        sanitizedValue = sanitizedValue.substr(0, 20);
+        this.value = sanitizedValue;
+    });
+    document.getElementById("name_participant").addEventListener("input", function() {
+        var inputValue = this.value;
+        var sanitizedValue = inputValue.replace(/[^A-Za-zА-Яа-яЁёІіЇїҐґ\s'’-]/g, '');
+        sanitizedValue = sanitizedValue.substr(0, 20);
         this.value = sanitizedValue;
     });
 
