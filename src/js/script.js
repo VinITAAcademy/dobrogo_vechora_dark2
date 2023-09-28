@@ -26,6 +26,7 @@ $(document).ready(function () {
     });
     $(".form-button-paticipant").click(function () {
         $("#form-for-paticipant").fadeIn();
+        $("body").toggleClass("lock");
     });
     $(".close, .form-paticipant").click(function () {
         $("#form-for-paticipant").fadeOut();
@@ -38,6 +39,18 @@ $(document).ready(function () {
         var inputValue = this.value;
         var sanitizedValue = inputValue.replace(/[^A-Za-zА-Яа-яЁёІіЇїҐґ\s'’-]/g, '');
         sanitizedValue = sanitizedValue.substr(0, 20); // Обмеження до 20 символів
+        this.value = sanitizedValue;
+    });
+    document.getElementById("last-name-partner").addEventListener("input", function() {
+        var inputValue = this.value;
+        var sanitizedValue = inputValue.replace(/[^A-Za-zА-Яа-яЁёІіЇїҐґ\s'’-]/g, '');
+        sanitizedValue = sanitizedValue.substr(0, 20); 
+        this.value = sanitizedValue;
+    });
+    document.getElementById("last-name-participant").addEventListener("input", function() {
+        var inputValue = this.value;
+        var sanitizedValue = inputValue.replace(/[^A-Za-zА-Яа-яЁёІіЇїҐґ\s'’-]/g, '');
+        sanitizedValue = sanitizedValue.substr(0, 20);
         this.value = sanitizedValue;
     });
 
