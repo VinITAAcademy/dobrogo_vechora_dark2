@@ -1210,6 +1210,210 @@ textarea.form-input {
     }
 }
 
+#container-for-block-partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container-for-block-partners .container-for-block-partners {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#container-for-block-partners .info-for-block-partners {
+    background-color: var(--background-dark);
+    color: aliceblue
+}
+
+
+@media (min-width: 1500px) {
+    #container-for-block-partners .line-for-block-partners {
+        display: flex;
+    }
+
+    #container-for-block-partners .img-for-block-partners {
+        width: 50%;
+    }
+
+    #container-for-block-partners .setting-for-img-partners {
+        width: 100%;
+    }
+
+    #container-for-block-partners .info-for-block-partners {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+    #container-for-block-partners .setting-block-info-partners {
+        width: 70%;
+        margin-left: 50px;
+    }
+
+    #container-for-block-partners .first-text-for-partners {
+        padding-bottom: 30px;
+        color: var(--text-white);
+        font-family: Gilroy;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    #container-for-block-partners .second-text-for-partners {
+        margin: 24px 0;
+        color: var(--text-white);
+        font-family: Helvetica Now Display;
+        font-size: 22px;
+        font-style: italic;
+        font-weight: 500;
+        line-height: 162%;
+    }
+
+    #container-for-block-partners .border-dotter-for-text-partners {
+        border-bottom: dotted 2px #FFF;
+        border-spacing: 5px;
+    }
+
+    #container-for-block-partners .click-registration-partners {
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        height: 75px;
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 830px) and (max-width: 1499px) {
+    #container-for-block-partners .line-for-block-partners {
+        display: flex;
+    }
+
+    #container-for-block-partners .img-for-block-partners {
+        width: 50%;
+        min-height: 700px;
+    }
+
+    #container-for-block-partners .setting-for-img-partners {
+        width: 100%;
+        min-height: 700px;
+    }
+
+    .info-for-block-partners {
+
+        width: 50%;
+        min-height: 700px;
+    }
+
+    #container-for-block-partners .setting-block-info-partners {
+        padding-top: 80px;
+        width: 75%;
+        margin-left: 50px;
+        min-height: 700px;
+    }
+
+    #container-for-block-partners .first-text-for-partners {
+        padding-bottom: 15px;
+        color: var(--text-white);
+        font-family: Gilroy;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    #container-for-block-partners .second-text-for-partners {
+        margin: 10px 0;
+        color: var(--text-white);
+        font-family: Helvetica Now Display;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 500;
+        line-height: 162%;
+    }
+
+    #container-for-block-partners .border-dotter-for-text-partners {
+        border-bottom: dotted 2px #FFF;
+        border-spacing: 5px;
+    }
+
+    #container-for-block-partners .click-registration-partners {
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 60px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 829px) {
+    #container-for-block-partners .img-for-block-partners {
+        width: 100%;
+    }
+
+    #container-for-block-partners .setting-for-img-partners {
+        width: 100%;
+    }
+
+    #container-for-block-partners .info-for-block-partners {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #container-for-block-partners .setting-block-info-partners {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    #container-for-block-partners .first-text-for-partners {
+        padding-bottom: 15px;
+        color: var(--text-white);
+        font-family: Gilroy;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    #container-for-block-partners .second-text-for-partners {
+        margin: 10px 0;
+        color: var(--text-white);
+        font-family: Helvetica Now Display;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 500;
+        line-height: 162%;
+    }
+
+    #container-for-block-partners .border-dotter-for-text-partners {
+        width: 100%;
+        border-bottom: dotted 2px #FFF;
+        border-spacing: 5px;
+    }
+
+    #container-for-block-partners .click-registration-partners {
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 60px;
+        font-size: 18px;
+    }
+}
+
 #scroll-parters .col {
     overflow-x: scroll;
     white-space: nowrap;
