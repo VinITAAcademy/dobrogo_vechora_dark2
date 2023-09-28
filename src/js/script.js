@@ -41,8 +41,8 @@ $(document).ready(function () {
         this.value = sanitizedValue;
     });
     document.getElementById("name_participant").addEventListener("input", function() {
-        var inputValue = this.value;
-        var sanitizedValue = inputValue.replace(/[^A-Za-zА-Яа-яЁёІіЇїҐґ\s'’-]/g, '');
+        let inputValue = this.value;
+        let sanitizedValue = inputValue.replace(/[^A-Za-zА-Яа-яЁёІіЇїҐґ\s'’-]/g, '');
         sanitizedValue = sanitizedValue.substr(0, 20);
         this.value = sanitizedValue;
     });
