@@ -758,7 +758,6 @@ textarea.form-input {
     border-top: solid 17px blue;
     color: var(--button-background-normal);
     overflow-y: scroll;
-    overflow: hidden;
 }
 
 .main-form-text {
