@@ -9,7 +9,7 @@ $(document).ready(function () {
         $("#form").fadeIn();
     });
 
-    $(".close, .form").click(function () {
+    $(".close, .form, #close-form-partner").click(function () {
         $("#form").fadeOut();
         $("body").toggleClass("lock");
     });
@@ -28,7 +28,7 @@ $(document).ready(function () {
         $("#form-for-paticipant").fadeIn();
         $("body").toggleClass("lock");
     });
-    $(".close, .form-paticipant, .close-form").click(function () {
+    $(".close, .form-paticipant, #close-form-participant").click(function () {
         $("#form-for-paticipant").fadeOut();
         $("body").toggleClass("lock");
     });
