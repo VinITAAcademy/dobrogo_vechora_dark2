@@ -9,7 +9,7 @@ $(document).ready(function () {
         $("#form").fadeIn();
     });
 
-    $(".close, .form").click(function () {
+    $(".close, .form, #close-form-partner").click(function () {
         $("#form").fadeOut();
         $("body").toggleClass("lock");
     });
@@ -26,20 +26,28 @@ $(document).ready(function () {
     });
     $(".form-button-paticipant").click(function () {
         $("#form-for-paticipant").fadeIn();
+        $("body").toggleClass("lock");
     });
-    $(".close, .form-paticipant").click(function () {
+    $(".close, .form-paticipant, #close-form-participant").click(function () {
         $("#form-for-paticipant").fadeOut();
         $("body").toggleClass("lock");
     });
     $(".pin-block-patriot").click(function (event) {
         $("body").toggleClass("lock");
     });
-    document.getElementById("name").addEventListener("input", function() {
-        var inputValue = this.value;
-        var sanitizedValue = inputValue.replace(/[^A-Za-zА-Яа-яЁёІіЇїҐґ\s'’-]/g, '');
-        sanitizedValue = sanitizedValue.substr(0, 20); // Обмеження до 20 символів
-        this.value = sanitizedValue;
-    });
+    function sanitizeInput(inputElementId, maxLength) {
+        document.getElementById(inputElementId).addEventListener("input", function() {
+            let inputValue = this.value;
+            let sanitizedValue = inputValue.replace(/[^A-Za-zА-Яа-яЁёІіЇїҐґ\s'’-]/g, '');
+            sanitizedValue = sanitizedValue.substr(0, maxLength);
+            this.value = sanitizedValue;
+        });
+    }
+    
+    sanitizeInput("last-name-partner", 30);
+    sanitizeInput("last-name-participant", 30);
+    sanitizeInput("name", 20);
+    sanitizeInput("name_participant", 20);
 
 
     document.querySelector(".thanx-close").addEventListener("click", function () {
