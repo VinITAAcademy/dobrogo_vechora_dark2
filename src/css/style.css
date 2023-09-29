@@ -739,7 +739,7 @@ textarea.form-input {
 
 .form-content-paticipant {
     background-color: #fff;
-    width: 100%;
+    width: 90%;
     height: auto;
     padding: 10px;
     position: absolute;
@@ -750,6 +750,7 @@ textarea.form-input {
     border-top: solid 17px blue;
     color: var(--button-background-normal);
     overflow-y:scroll;
+    overflow: hidden;
 }
 
 .main-form-text{
@@ -762,6 +763,7 @@ textarea.form-input {
     position: absolute;
     right: 10px;
     font-size: 30px;
+    cursor: pointer;
     color: var(--text-dark);
 }
 
