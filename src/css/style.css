@@ -1462,6 +1462,7 @@ textarea.form-input {
         width: calc(100% / 3);
     }
 }
+
 @media(max-width: 1920px)and (min-width: 1024px){
 #provide-section .ratio-16x9 iframe {
     width: 1270px;
