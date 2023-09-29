@@ -27,7 +27,7 @@ $(document).ready(function () {
     $(".form-button-paticipant").click(function () {
         $("#form-for-paticipant").fadeIn();
     });
-    $(".close, .form-paticipant").click(function () {
+    $(".close, .form-paticipant, .close-form").click(function () {
         $("#form-for-paticipant").fadeOut();
         $("body").toggleClass("lock");
     });

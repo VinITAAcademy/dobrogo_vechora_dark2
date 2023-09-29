@@ -740,7 +740,7 @@ textarea.form-input {
 .form-content-paticipant {
     background-color: #fff;
     width: 100%;
-    height: 800px;
+    height: auto;
     padding: 10px;
     position: absolute;
     top: 50%;
@@ -749,7 +749,20 @@ textarea.form-input {
     border-radius: 5px;
     border-top: solid 17px blue;
     color: var(--button-background-normal);
-    overflow: auto;
+    overflow-y:scroll;
+}
+
+.main-form-text{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.close-form {
+    position: absolute;
+    right: 10px;
+    font-size: 30px;
+    color: var(--text-dark);
 }
 
 .formCheck {
