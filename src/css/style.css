@@ -757,7 +757,7 @@ textarea.form-input {
     transform: translate(-50%, -50%);
     border-top: solid 17px blue;
     color: var(--button-background-normal);
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .main-form-text {
