@@ -1476,8 +1476,13 @@ textarea.form-input {
     #scroll-parters .col img {
         width: calc(100% / 3);
     }
+     #footer-section .social-icons a {
+        font-size: 10px;
+        }
+    #footer-section{
+        background-color: var(--background-footer);
+    }
 }
-
 @media(max-width: 1920px)and (min-width: 1024px){
 #provide-section .ratio-16x9 iframe {
     width: 1270px;
