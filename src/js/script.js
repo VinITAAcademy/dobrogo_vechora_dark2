@@ -1,9 +1,24 @@
 'use strict';
 
 $(document).ready(function () {
+    function checkScreenWidth() {
+        if ($(window).width() > 765) {
+            $(".header-burger, .header-menu, .blur-background").removeClass("active");
+            $("body").removeClass("lock");
+        }
+    }
+    $(window).resize(function () {
+        checkScreenWidth();
+    });
     $(".header-burger").click(function (event) {
         $(".header-burger,.header-menu").toggleClass("active");
         $("body").toggleClass("lock");
+        let blurBackground = $(".blur-background");
+        if (blurBackground.hasClass('active')) {
+            blurBackground.removeClass('active');
+        } else {
+            blurBackground.addClass('active');
+        }
     });
     $(".show-form-partner-program-questionnaire").click(function () {
         $("#form").fadeIn();
@@ -36,14 +51,14 @@ $(document).ready(function () {
         $("body").toggleClass("lock");
     });
     function sanitizeInput(inputElementId, maxLength) {
-        document.getElementById(inputElementId).addEventListener("input", function() {
+        document.getElementById(inputElementId).addEventListener("input", function () {
             let inputValue = this.value;
             let sanitizedValue = inputValue.replace(/[^A-Za-zА-Яа-яЁёІіЇїҐґ\s'’-]/g, '');
             sanitizedValue = sanitizedValue.substr(0, maxLength);
             this.value = sanitizedValue;
         });
     }
-    
+
     sanitizeInput("last-name-partner", 30);
     sanitizeInput("last-name-participant", 30);
     sanitizeInput("name", 20);
@@ -61,12 +76,12 @@ $(document).ready(function () {
     const formPartner = document.getElementById("form-partner-program-questionnaire");
     const formPaticipant = document.getElementById("form-participant-program");
 
-    formPartner.addEventListener("submit", function(event){
+    formPartner.addEventListener("submit", function (event) {
         event.preventDefault();
         formSend(formPartner);
     });
 
-    formPaticipant.addEventListener("submit", function(event){
+    formPaticipant.addEventListener("submit", function (event) {
         event.preventDefault();
         formSend(formPaticipant);
     });
