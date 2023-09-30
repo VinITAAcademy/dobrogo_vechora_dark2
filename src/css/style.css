@@ -359,6 +359,7 @@ body.lock {
 #resourse-section .block-resourse .col-md-12 p {
     font-size: 22px;
 }
+
 #resourse-section .row .resource-block .resoure-col {
     padding: 0;
 }
@@ -490,7 +491,6 @@ body.lock {
 }
 
 #registration-section .block {
-    position: relative;
     display: flex;
     background: var(--background-dark);
     color: var(--text-white);
@@ -499,15 +499,13 @@ body.lock {
 }
 
 #registration-section .content {
-    text-align: left;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     padding: 20px;
-    position: relative;
     left: 10%;
-    margin-right: 15%;
 }
 
 #registration-section .text {
@@ -517,6 +515,7 @@ body.lock {
     margin-bottom: 20px;
     color: var(--text-white);
     font-family: 'Gilroy', sans-serif;
+    text-align: center;
 }
 
 #registration-section .button {
@@ -524,19 +523,18 @@ body.lock {
     height: 75px;
     border-radius: 6px;
     background: var(--button-background-normal);
-    display: block;
+    /* display: block; */
     color: var(--button-text-normal);
     font-size: 22px;
     font-family: 'Helvetica', sans-serif;
 }
-
 #registration-section .button:hover {
     background-color: var(--button-background-hover);
 }
 
-#registration-section .image {
+/* #registration-section .image {
     text-align: center;
-}
+} */
 
 #registration-section img {
     height: auto;
@@ -546,8 +544,9 @@ body.lock {
 #footer-section {
     justify-content: center;
     align-items: center;
-    
+
 }
+
 #footer-section .footer-background {
     background-color: var(--background-footer);
     max-width: 1920px;
@@ -1478,10 +1477,10 @@ textarea.form-input {
     }
 }
 
-@media(max-width: 1920px)and (min-width: 1024px){
-#provide-section .ratio-16x9 iframe {
-    width: 1270px;
-    height: 602px;
-    position: relative;
-}
+@media(max-width: 1920px)and (min-width: 1024px) {
+    #provide-section .ratio-16x9 iframe {
+        width: 1270px;
+        height: 602px;
+        position: relative;
+    }
 }
