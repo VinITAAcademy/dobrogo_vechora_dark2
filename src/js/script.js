@@ -26,7 +26,6 @@ $(document).ready(function () {
     });
     $(".form-button-paticipant").click(function () {
         $("#form-for-paticipant").fadeIn();
-        $("body").toggleClass("lock");
     });
     $(".close, .form-paticipant, #close-form-participant").click(function () {
         $("#form-for-paticipant").fadeOut();
@@ -77,9 +76,9 @@ $(document).ready(function () {
 
         if (error === 0) {
             document.querySelector(".thanx").style.display = "block";
+            resetValidation(form);
             grecaptcha.ready(function () {
                 grecaptcha.execute('6LfjdXUnAAAAAO68m7JLRXV61_dnTkHgl9k5xW1j', { action: 'submit' }).then(function (token) {
-                    resetValidation(form);
 
                     const formData = new FormData(form);
                     const apiUrl = "https://intita.com/api/v1/entrant";
