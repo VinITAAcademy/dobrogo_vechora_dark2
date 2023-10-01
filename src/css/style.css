@@ -699,7 +699,8 @@ textarea.form-input {
 
 .thanx-content {
     background-color: #fff;
-    width: 960px;
+    width: 90%;
+    max-width: 420px;
     height: 469px;
     padding: 10px;
     position: absolute;
@@ -746,17 +747,16 @@ textarea.form-input {
 .form-content-paticipant {
     background-color: #fff;
     width: 90%;
-    height: auto;
+    max-width: 420px;
+    height: 100vh;
     padding: 10px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 5px;
     border-top: solid 17px blue;
     color: var(--button-background-normal);
-    overflow-y: scroll;
-    overflow: hidden;
+    overflow-y: auto;
 }
 
 .main-form-text {
@@ -782,6 +782,21 @@ textarea.form-input {
 .formCheck input[type="checkbox"] {
     margin-right: 10px;
     /* Задаємо відстань між чекбоксом і текстом */
+}
+
+.blur-background{
+    position: absolute;
+    width: 100%;
+    height: 1000vh;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    top: 0;
+    display: none;
+}
+
+.blur-background.active{
+    display: block;
 }
 
 @media (min-width: 768px) {
@@ -855,6 +870,13 @@ textarea.form-input {
         max-width: 960px;
         width: 90%;
         height: 750px;
+    }
+
+    .thanx-content{
+        max-width: 960px;
+        width: 90%;
+        max-height: 750px;
+        height: auto;
     }
 
     .form-content h2 {
@@ -1474,6 +1496,12 @@ textarea.form-input {
 @media(max-width: 767px) and (min-width: 320px) {
     #scroll-parters .col img {
         width: calc(100% / 3);
+    }
+     #footer-section .social-icons a {
+        font-size: 10px;
+        }
+    #footer-section{
+        background-color: var(--background-footer);
     }
 }
 
