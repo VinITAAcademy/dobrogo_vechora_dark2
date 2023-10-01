@@ -359,6 +359,7 @@ body.lock {
 #resourse-section .block-resourse .col-md-12 p {
     font-size: 22px;
 }
+
 #resourse-section .row .resource-block .resoure-col {
     padding: 0;
 }
@@ -490,7 +491,6 @@ body.lock {
 }
 
 #registration-section .block {
-    position: relative;
     display: flex;
     background: var(--background-dark);
     color: var(--text-white);
@@ -499,15 +499,13 @@ body.lock {
 }
 
 #registration-section .content {
-    text-align: left;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     padding: 20px;
-    position: relative;
     left: 10%;
-    margin-right: 15%;
 }
 
 #registration-section .text {
@@ -517,6 +515,7 @@ body.lock {
     margin-bottom: 20px;
     color: var(--text-white);
     font-family: 'Gilroy', sans-serif;
+    text-align: center;
 }
 
 #registration-section .button {
@@ -524,19 +523,18 @@ body.lock {
     height: 75px;
     border-radius: 6px;
     background: var(--button-background-normal);
-    display: block;
+    /* display: block; */
     color: var(--button-text-normal);
     font-size: 22px;
     font-family: 'Helvetica', sans-serif;
 }
-
 #registration-section .button:hover {
     background-color: var(--button-background-hover);
 }
 
-#registration-section .image {
+/* #registration-section .image {
     text-align: center;
-}
+} */
 
 #registration-section img {
     height: auto;
@@ -546,8 +544,9 @@ body.lock {
 #footer-section {
     justify-content: center;
     align-items: center;
-    
+
 }
+
 #footer-section .footer-background {
     background-color: var(--background-footer);
     max-width: 1920px;
@@ -700,7 +699,8 @@ textarea.form-input {
 
 .thanx-content {
     background-color: #fff;
-    width: 960px;
+    width: 90%;
+    max-width: 420px;
     height: 469px;
     padding: 10px;
     position: absolute;
@@ -747,17 +747,16 @@ textarea.form-input {
 .form-content-paticipant {
     background-color: #fff;
     width: 90%;
-    height: auto;
+    max-width: 420px;
+    height: 100vh;
     padding: 10px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 5px;
     border-top: solid 17px blue;
     color: var(--button-background-normal);
-    overflow-y: scroll;
-    overflow: hidden;
+    overflow-y: auto;
 }
 
 .main-form-text {
@@ -783,6 +782,21 @@ textarea.form-input {
 .formCheck input[type="checkbox"] {
     margin-right: 10px;
     /* Задаємо відстань між чекбоксом і текстом */
+}
+
+.blur-background{
+    position: absolute;
+    width: 100%;
+    height: 1000vh;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    top: 0;
+    display: none;
+}
+
+.blur-background.active{
+    display: block;
 }
 
 @media (min-width: 768px) {
@@ -856,6 +870,13 @@ textarea.form-input {
         max-width: 960px;
         width: 90%;
         height: 750px;
+    }
+
+    .thanx-content{
+        max-width: 960px;
+        width: 90%;
+        max-height: 750px;
+        height: auto;
     }
 
     .form-content h2 {
@@ -1476,12 +1497,18 @@ textarea.form-input {
     #scroll-parters .col img {
         width: calc(100% / 3);
     }
+     #footer-section .social-icons a {
+        font-size: 10px;
+        }
+    #footer-section{
+        background-color: var(--background-footer);
+    }
 }
 
-@media(max-width: 1920px)and (min-width: 1024px){
-#provide-section .ratio-16x9 iframe {
-    width: 1270px;
-    height: 602px;
-    position: relative;
-}
+@media(max-width: 1920px)and (min-width: 1024px) {
+    #provide-section .ratio-16x9 iframe {
+        width: 1270px;
+        height: 602px;
+        position: relative;
+    }
 }
