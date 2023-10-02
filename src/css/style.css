@@ -20,10 +20,10 @@
     --input-disabled: #CECECE;
     --input-error: #ff0000;
     /* footer */
-    --footer-icons-active: #00ff00;
+    --footer-icons-active: #2D5BD0;
     --footer-icons-border-active: #0000ff;
     --foter-border: #6D6D6D;
-    --footer-a-active: #00ff00;
+    --footer-a-active: #2D5BD0;
     /* scroll */
     --color-scroll: #D8D8D8;
     --color-skroll-hover: #2D5BD0;
@@ -1465,7 +1465,7 @@ textarea.form-input {
 
 #scroll-parters .col img {
     width: calc(95% / 4);
-    max-width: 100%;
+    max-width: 150px;
     height: auto;
     padding-top: 20px;
 }
@@ -1477,7 +1477,7 @@ textarea.form-input {
 }
 
 #scroll-parters ::-webkit-scrollbar-thumb {
-    background-color: var(--color-scroll);
+    background-color: var(--color-skroll-hover);
     border-radius: 4px;
     width: 2px;
 }
