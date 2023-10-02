@@ -1465,7 +1465,7 @@ textarea.form-input {
 
 #scroll-parters .col img {
     width: calc(95% / 4);
-    max-width: 150px;
+    max-width: 100%;
     height: auto;
     padding-top: 20px;
 }
@@ -1492,13 +1492,16 @@ textarea.form-input {
     background-color: var(--color-scroll);
     border-radius: 4px;
 }
+#scroll-parters .col a{
+    text-decoration: none;
+}
 
 @media(max-width: 767px) and (min-width: 320px) {
     #scroll-parters .col img {
         width: calc(100% / 3);
     }
      #footer-section .social-icons a {
-        font-size: 10px;
+        font-size: 15px;
         }
     #footer-section{
         background-color: var(--background-footer);
